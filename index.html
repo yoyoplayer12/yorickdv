@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Yorick Devleeschouwer</title>
+</head>
+<body class="lightest-background">
+    <header class="centered-fp lightest-background">
+        <a href="#firstinfo" class="dark-color fptitle">Yorick Devleeschouwer</a>
+    </header>
+    <section class="firstinfo dark-background" id="firstinfo">
+        <div class="firstinfo-container">
+            <a href="#develop" class="develop pickscreen1 lightest-color">Develop</a>
+            <a href="#dj" class="dj pickscreen1 lightest-color">DJ</a>
+            <a href="#design" class="design pickscreen1 lightest-color">Design</a>
+        </div>
+    </section>
+    <section class="developsection lightdark-background light-color" id="develop">
+            <p>*woordenspin?*</p>
+            <p>*Animatie?*</p>
+    </section>
+</body>
+
+
+
+
+<script>
+    var url = "http://colormind.io/api/";
+    var data = {
+        model : "default"
+    }
+
+    var http = new XMLHttpRequest();
+
+    http.onreadystatechange = function() {
+        if(http.readyState == 4 && http.status == 200) {
+            var palette = JSON.parse(http.responseText).result;
+
+            var dark = palette[0];
+            var lightdark = palette[1];
+            var maincolor = palette[2];
+            var light = palette[3];
+            var lightest = palette[4];
+            
+
+            //backgroundcolors
+            assignBackgroundColorToElement(".dark-background", dark); // Assign color to element with id "element-1"
+            assignBackgroundColorToElement(".lightdark-background", lightdark); // Assign color to element with id "element-1"
+            assignBackgroundColorToElement(".maincolor-background", maincolor); // Assign color to element with id "element-1"
+            assignBackgroundColorToElement(".light-background", light); // Assign color to element with id "element-1"
+            assignBackgroundColorToElement(".lightest-background", lightest); // Assign color to element with id "element-1"
+            //colors
+            assignColorToElement(".dark-color", dark); // Assign color to element with id "element-1"
+            assignColorToElement(".lightdark-color", lightdark); // Assign color to element with id "element-1"
+            assignColorToElement(".maincolor-color", maincolor); // Assign color to element with id "element-1"
+            assignColorToElement(".light-color", light); // Assign color to element with id "element-1"
+            assignColorToElement(".lightest-color", lightest); // Assign color to element with id "element-1"
+
+
+
+        }
+    }
+
+    http.open("POST", url, true);
+    http.send(JSON.stringify(data));
+    function assignBackgroundColorToElement(elementclass, color) {
+        var element = document.querySelectorAll(elementclass);
+        for (var i = 0; i < element.length; i++) {
+            element[i].style.backgroundColor = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
+        }
+    }
+    function assignColorToElement(elementclass, color) {
+        var element = document.querySelectorAll(elementclass);
+        for (var i = 0; i < element.length; i++) {
+            element[i].style.color = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
+        }
+    }
+</script>
+</html>
