@@ -1,0 +1,11 @@
+Model Information:
+* title:	Balloon
+* source:	https://sketchfab.com/3d-models/balloon-78b1016e1a38434b8f4d5741b1f0720c
+* author:	Lydechaser (https://sketchfab.com/Lydechaser)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Balloon" (https://sketchfab.com/3d-models/balloon-78b1016e1a38434b8f4d5741b1f0720c) by Lydechaser (https://sketchfab.com/Lydechaser) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
