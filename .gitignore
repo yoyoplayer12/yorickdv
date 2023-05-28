@@ -1,0 +1,9 @@
+vr/node_modules
+vr/index.html
+vr/README.md
+vr/logo.png
+vr/main.js
+vr/package.json
+vr/package-lock.json
+vr/textures/
+.DS_Store
