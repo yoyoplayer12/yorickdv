@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Dev4 WebXR Demo</title>
-		<style>
-			body { margin: 0; }
-		</style>
-		<link rel="alternate icon" type="image/png" href="assets/logo-4867018a.png">
-		<script type="module" crossorigin src="assets/index-8839998c.js"></script>
-	</head>
-	<body>
-		
-	</body>
+
+<head>
+	<meta charset="utf-8">
+	<title>Dev4 WebXR Demo</title>
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.score-display {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			color: white;
+			font-size: 30px;
+			background-color: green;
+			padding: 15px 20px;
+			border-radius: 100px;
+		}
+
+		.lives-display {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			color: white;
+			font-size: 30px;
+			background-color: rgb(213, 79, 79);
+			padding: 15px 20px;
+			border-radius: 100px;
+		}
+	</style>
+	<link rel="alternate icon" type="image/png" href="assets/logo-4867018a.png">
+  <script type="module" crossorigin src="assets/index-3f749ecc.js"></script>
+</head>
+
+<body>
+	
+	<div id="score" class="score-display">Score: 0</div>
+	<div id="lives" class="lives-display">Lives: 3</div>
+</body>
 </html>
