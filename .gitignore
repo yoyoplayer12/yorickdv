@@ -1,9 +1,9 @@
-vr/node_modules
-vr/index.html
-vr/logo.png
-vr/main.js
-vr/package.json
-vr/package-lock.json
-vr/textures/
-vr/assets/
+projects/vrballoons/vr/node_modules
+projects/vrballoons/vr/index.html
+projects/vrballoons/vr/logo.png
+projects/vrballoons/vr/main.js
+projects/vrballoons/vr/package.json
+projects/vrballoons/vr/package-lock.json
+projects/vrballoons/vr/textures/
+projects/vrballoons/vr/assets/
 .DS_Store
