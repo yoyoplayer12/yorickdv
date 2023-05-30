@@ -1,9 +1,7 @@
-projects/vrballoons/vr/node_modules
-projects/vrballoons/vr/index.html
-projects/vrballoons/vr/logo.png
-projects/vrballoons/vr/main.js
-projects/vrballoons/vr/package.json
-projects/vrballoons/vr/package-lock.json
-projects/vrballoons/vr/textures/
-projects/vrballoons/vr/assets/
+projects/2IMD/vrballoons/vr/node_modules
+projects/2IMD/vrballoons/vr/logo.png
+projects/2IMD/vrballoons/vr/package.json
+projects/2IMD/vrballoons/vr/package-lock.json
+projects/2IMD/vrballoons/vr/textures/
+projects/2IMD/vrballoons/vr/assets/
 .DS_Store
