@@ -1,0 +1,15 @@
+body {
+	font-family: arial,sans-serif;
+	}
+.center {
+	width:500px;
+	height:780px;
+	position:absolute;
+    z-index: 0;
+	left:50%;
+	top:50%;
+	margin:-390px 0 0 -250px;
+	text-align:center;
+	border: 1px solid black;
+	overflow: hidden;
+}

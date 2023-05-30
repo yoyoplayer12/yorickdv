@@ -1,0 +1,315 @@
+:root {
+	--buttons-delay: 5s;
+  }
+body {
+	font-family: arial, sans-serif;
+	}
+audio{
+	margin-top: 50px;
+}
+.center {
+	width:650px;
+	height:400px;
+	position:absolute;
+    z-index: 0;
+	left:50%;
+	top:40%;
+	margin:-200px 0 0 -325px;
+	text-align:center;
+}
+a:hover {
+	text-decoration:underline;
+	}
+nav {
+	float: right;
+	width: 280px;
+	margin-top: 24px;
+	margin-right: 20px;
+	font-size: .8em;
+}
+nav a {
+	color: #222;
+	display: block;
+	float:left;
+	margin: 0px 8px;
+	}
+.apps {
+	text-indent: -9999px;
+	height: 16px;
+	width: 16px;
+	background: url(../images/apps.png);
+	margin-top:5px;
+	}
+.signin {
+	font-weight: bold;
+	color: #FFF;
+	background: #4485f4;
+	padding: 8px 10px;
+	border-style: none;
+	border-radius: 2px;
+	}
+.l {
+	line-height: 25px;	
+	}
+.signin:hover {
+	text-decoration:none;
+	}
+.search {
+	width:80%;
+	height:40px;
+    padding-left: 15px;
+	border-top: 1px solid #c0c0c0;
+	border-right: 1px solid #c0c0c0;
+	border-bottom: 1px solid #d9d9d9;
+	border-left: 1px solid #d9d9d9;
+	background: url(../images/micro.png) no-repeat 95% center;
+	margin-top: 60px;
+	margin-bottom: 15px;
+    font-size: .9em;
+    border-radius: 25px;
+	}
+.button {
+	font-size: .85em;
+	color: #131313;
+	background: #f2f2f2;
+	height: 30px;
+	padding: 6px 12px;
+	margin: 0px 6px;
+    border:none;
+	}
+p {
+	font-size: .8em;
+	color: #222;
+	margin-top: 35px;
+}
+a {
+	text-decoration: none;
+	margin-right: 4px;
+	margin-left: 4px;
+}
+.doodle {
+	height: 300px;
+	}
+.doodleimage{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+}
+#two{
+animation: two 5s linear infinite alternate;
+}
+#three{
+animation: three 5s linear infinite alternate;
+}
+#four{
+animation: four 5s linear infinite alternate;
+}
+#five{
+animation: five 5s linear infinite alternate;
+}
+.spinnr{
+animation: spinnr 4s ease-in-out infinite alternate;
+height: 24%;
+}
+#bluebutton1{
+	opacity: 0%;
+	animation: button1 16s linear var(--buttons-delay) infinite alternate;
+}
+#bluebutton2{
+	opacity: 0%;
+	animation: button2 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -13px;
+}
+#bluebutton3{
+	opacity: 0%;
+	animation: button3 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -26px;
+}
+#bluebutton4{
+	opacity: 0%;
+	animation: button4 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -39px;
+}
+#bluebutton5{
+	opacity: 0%;
+	animation: button5 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -105px;
+}
+#bluebutton6{
+	opacity: 0%;
+	animation: button6 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -118px;
+}
+#bluebutton7{
+	opacity: 0%;
+	animation: button7 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -131px;
+}
+#bluebutton8{
+	opacity: 0%;
+	animation: button8 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -144px;
+}
+#bluebutton9{
+	opacity: 0%;
+	animation: button9 16s linear var(--buttons-delay) infinite alternate;
+	margin-top: -13px;
+}
+#bluebutton10{
+	opacity: 0%;
+	animation: button10 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -13px;
+	margin-top: -13px;
+}
+#bluebutton11{
+	opacity: 0%;
+	animation: button11 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -26px;
+	margin-top: -13px;
+}
+#bluebutton12{
+	opacity: 0%;
+	animation: button12 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -39px;
+	margin-top: -13px;
+}
+#bluebutton13{
+	opacity: 0%;
+	animation: button13 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -105px;
+	margin-top: -13px;
+}
+#bluebutton14{
+	opacity: 0%;
+	animation: button14 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -118px;
+	margin-top: -13px;
+}
+#bluebutton15{
+	opacity: 0%;
+	animation: button15 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -131px;
+	margin-top: -13px;
+}
+#bluebutton16{
+	opacity: 0%;
+	animation: button16 16s linear var(--buttons-delay) infinite alternate;
+	margin-left: -144px;
+	margin-top: -13px;
+}
+#rightspinner{
+	margin-top: 147px;
+	right: 281px;
+	position: absolute;
+	animation-delay: 2s;
+}
+#leftspinner{
+	margin-top: 147px;
+	right: 387px;
+	position: absolute;
+}
+@keyframes button1 {
+	43.75%{opacity: 100%;}
+}
+@keyframes button2 {
+	31.25%{opacity: 100%;}
+}
+@keyframes button3 {
+	87.50%{opacity: 100%;}
+}
+@keyframes button4 {
+	6.25%{opacity: 100%;}
+}
+@keyframes button5 {
+	37.5%{opacity: 100%;}
+}
+@keyframes button6 {
+	100%{opacity: 100%;}
+}
+@keyframes button7 {
+	12.5%{opacity: 100%;}
+}
+@keyframes button8 {
+	75%{opacity: 100%;}
+}
+@keyframes button9 {
+	50%{opacity: 100%;}
+}
+@keyframes button10 {
+	18.75%{opacity: 100%;}
+}
+@keyframes button11 {
+	81.25%{opacity: 100%;}
+}
+@keyframes button12 {
+	62.5%{opacity: 100%;}
+}
+@keyframes button13 {
+	68.75%{opacity: 100%;}
+}
+@keyframes button14 {
+	25%{opacity: 100%;}
+}
+@keyframes button15 {
+	93.75%{opacity: 100%;}
+}
+@keyframes button16 {
+	56.25%{opacity: 100%;}
+}
+@keyframes two {
+	0% {opacity: 100%;}
+	10%{opacity: 0%;}
+	20% {opacity: 0%;}
+	30% {opacity: 0%;}
+	40% {opacity: 0%;}
+	50% {opacity: 100%;}
+	60% {opacity: 0%;}
+	70% {opacity: 0%;}
+	80% {opacity: 100%;}
+	90% {opacity: 0%;}
+	100% {opacity: 100%;}
+}
+@keyframes three {
+	0% {opacity: 0%;}
+	10%{opacity: 100%;}
+	20% {opacity: 0%;}
+	30% {opacity: 0%;}
+	40% {opacity: 100%;}
+	50% {opacity: 0%;}
+	60% {opacity: 0%;}
+	70% {opacity: 0%;}
+	80% {opacity: 0%;}
+	90% {opacity: 100%;}
+	100% {opacity: 100%;}
+}
+@keyframes four {
+	0% {opacity: 0%;}
+	10%{opacity: 0%;}
+	20% {opacity: 100%;}
+	30% {opacity: 0%;}
+	40% {opacity: 0%;}
+	50% {opacity: 0%;}
+	60% {opacity: 100%;}
+	70% {opacity: 0%;}
+	80% {opacity: 100%;}
+	90% {opacity: 0%;}
+	100% {opacity: 100%;}
+}
+@keyframes five {
+	0% {opacity: 0%;}
+	10%{opacity: 0%;}
+	20% {opacity: 0%;}
+	30% {opacity: 100%;}
+	40% {opacity: 0%;}
+	50% {opacity: 0%;}
+	60% {opacity: 0%;}
+	70% {opacity: 100%;}
+	80% {opacity: 0%;}
+	90% {opacity: 100%;}
+	100% {opacity: 100%;}
+}
+@keyframes spinnr {
+	0% {transform: rotate(0deg);}
+	50% {transform: rotate(360deg);}
+	100% {transform: rotate(0deg);}
+} 
