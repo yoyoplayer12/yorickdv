@@ -1,0 +1,232 @@
+:root{
+	--enemy-x: 200px;
+	--enemy-y: 0px;
+}
+.center {
+	background-image: url(../images/Discotheek.png);
+	background-repeat: no-repeat;
+}
+
+/* Splashscreen begin */
+.splashscreen{
+	position: fixed;
+	width: 500px;
+	height: 780px;
+	background-color: black;
+	z-index: 10;
+	color: white;
+}
+.splashscreen.invisible{
+	position: fixed;
+	width: 500px;
+	height: 780px;
+	background-color: black;
+	z-index: 3;
+	color: white;
+	visibility: hidden;
+}
+.splashscreen h1{
+	font-size: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.splashscreen p{
+	font-size: 20px;
+	width: 300px;
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 200px;
+	line-height: 40px;
+	position: absolute;
+}
+.splashscreen p.gameover{
+    font-size: 50px;
+}
+.partyword{
+	animation: textcolor 20s linear 0s infinite;
+}
+.continue{
+	color: white;
+	visibility: visible;
+	animation: backgroundcolor 20s linear 0s infinite;
+	margin-top: 500px;
+	font-size: 20px;
+	border: none;
+	border-radius: 10px;
+	width: 200px;
+	height: 50px;
+}
+.continue.invisible{
+	visibility: hidden;
+}
+.sentone{
+	visibility: visible;
+}
+.senttwo{
+	visibility: visible;
+}
+.sentthree{
+	visibility: visible;
+}
+.sentfour{
+	visibility: visible;
+}
+.sentfive{
+	visibility: visible;
+}
+.sentsix{
+	visibility: visible;
+}
+.sentseven{
+	visibility: visible;
+}
+.senteight{
+	visibility: visible;
+}
+.sentone.invisible{
+	visibility: hidden;
+}
+.senttwo.invisible{
+	visibility: hidden;
+}
+.sentthree.invisible{
+	visibility: hidden;
+}
+.sentfour.invisible{
+	visibility: hidden;
+}
+.sentfive.invisible{
+	visibility: hidden;
+}
+.sentsix.invisible{
+	visibility: hidden;
+}
+.sentseven.invisible{
+	visibility: hidden;
+}
+.senteight.invisible{
+	visibility: hidden;
+}
+.continue:hover {
+	animation-play-state: paused;
+}
+.beer{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	margin-left: 150px;
+	background-image: url(../images/Beers.png);
+	animation: beeranimation 10s steps(59) infinite;
+}
+@keyframes textcolor {
+	0%{color: rgb(255, 255, 255);}
+	10%{color: rgb(255, 0, 0);}
+	20%{color: rgb(255, 140, 0);}
+	30%{color: rgb(255, 234, 0);}
+	40%{color: rgb(162, 255, 0);}
+	50%{color: rgb(0, 255, 179);}
+	60%{color: rgb(0, 200, 255);}
+	70%{color: rgb(0, 34, 255);}
+	80%{color: rgb(119, 0, 255);}
+	90%{color: rgb(217, 0, 255);}
+	100%{color: rgb(255, 255, 255);}
+}
+@keyframes backgroundcolor {
+	0%{background-color: rgb(0, 0, 0);}
+	10%{background-color: rgb(255, 0, 0);}
+	20%{background-color: rgb(255, 140, 0);}
+	30%{background-color: rgb(255, 234, 0);}
+	40%{background-color: rgb(162, 255, 0);}
+	50%{background-color: rgb(0, 255, 179);}
+	60%{background-color: rgb(0, 200, 255);}
+	70%{background-color: rgb(0, 34, 255);}
+	80%{background-color: rgb(119, 0, 255);}
+	90%{background-color: rgb(217, 0, 255);}
+	100%{background-color: rgb(0, 0, 0);}
+}
+@keyframes beeranimation {
+	to{background-position: -11800px;}
+}
+/* Splashscreen end */
+/* Main game start */
+.street {
+	position: absolute;
+	width: 500px;
+	height: 600px;
+	overflow: hidden;
+}
+.streetpic{
+	width: 500px;
+	height: 1200px;
+	animation: streetanimation 10s linear 0s infinite normal forwards running;
+}
+.player{
+	position: absolute;
+	z-index: 3;
+	width: 65px;
+	left: 175px;
+	height: 101px;
+	top: 480px;
+	background-image: url(../images/beerammo.png);
+	background-size: contain;
+}
+.lives{
+	position: absolute;
+	top: 680px;
+	left: 280px;
+	color: white;
+	background-color: black;
+	padding: 10px;
+	font-size: 20px;
+	z-index: 4;
+}
+.student{
+	visibility: visible;
+	position: absolute;
+	z-index: 2;
+	background-size: contain;
+	background-image: url(../images/student.png);
+	width: 61.5px;
+	height: 100px;
+	top: var(--enemy-y);
+	left: var(--enemy-x);
+}
+.student.invisible{
+	visibility: hidden;
+}
+.pointstext{
+	position: absolute;
+	top: 605px;
+	left: 65px;
+	color: white;
+	background-color: black;
+	padding: 10px;
+	font-size: 20px;
+}
+.gameover{
+    visibility: visible;
+    position: absolute;
+	top: 205px;
+	left: 0px;
+	color: white;
+
+}
+.endpoints{
+    visibility: visible;
+    position: absolute;
+	top: 405px;
+	left: 0px;
+	color: white;
+	font-size: 20px;
+}
+.gameover.invisible{
+    visibility: hidden;
+}
+.endpoints.invisible{
+    visibility: hidden;
+}
+@keyframes streetanimation {
+	0%{transform: translateY(-600px);}
+	100%{transform: translateY(0px);}
+}
+/* Main game end */

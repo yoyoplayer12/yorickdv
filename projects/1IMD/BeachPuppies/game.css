@@ -1,0 +1,14 @@
+body{
+    background-color: #019FA5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.centered{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: rgb(91, 140, 195);
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+}
