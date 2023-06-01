@@ -184,7 +184,7 @@ function init() {
 const standWidth = 4;
 const standHeight = 2;
 const standDepth = 2;
-
+textureLoader.setCrossOrigin('anonymous');
 //TEXTURES_______________________________________________________________
 const textureLoader = new THREE.TextureLoader();
 //grass texture for the floor
