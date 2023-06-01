@@ -1,0 +1,531 @@
+
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+:root{
+	--primary-color: #0046ae;
+	--secondary-color: #c1007d;
+	--secondary-darkblue: #00327e;
+	--white: #fff9f9;
+	--black: #111111;
+}
+@font-face {
+	font-family: 'Akira';
+	src: url("https://yorickdv.blob.core.windows.net/portfolio-public/fonts/akira expanded/Akira Expanded.otf") format("opentype");
+}
+
+/* Mobile */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body {
+	background-color: var(--secondary-color);
+	margin: 0;
+	font-family: 'Oxygen', sans-serif, arial, serif;
+	color: var(--white);
+}
+h3{
+	font-family: 'Akira', sans-serif, arial, serif;
+	font-size: 15px;
+	color: var(--white);
+	text-align: center;
+	margin-top: 0;
+	height: 50px;
+	line-height: 50px;
+	background-image: url('https://yorickdv.blob.core.windows.net/portfolio-public/photos/zengarden/headerpic.avif'); /* Replace 'mask-image.png' with the path to your mask image */
+	background-clip: text;
+	-webkit-background-clip: text; /* For Safari */
+	color: transparent;
+	-webkit-text-fill-color: transparent; /* For Safari */
+	margin-bottom: 40px;
+}
+a{
+	color: var(--white);
+}
+ul{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+/* 1 */
+header {
+	background-color: var(--secondary-darkblue);
+	display: grid;
+	grid-template-rows: auto auto;
+	background-image: url('https://yorickdv.blob.core.windows.net/portfolio-public/photos/zengarden/headerpic.avif'); /* Replace 'mask-image.png' with the path to your mask image */
+	background-clip: text;
+	-webkit-background-clip: text; /* For Safari */
+	color: transparent;
+	-webkit-text-fill-color: transparent; /* For Safari */
+	height: 50vh;
+}
+header h1{
+	font-family: 'Akira', sans-serif, arial, serif;
+	font-size: 50px;
+	color: var(--white);
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 0;
+	grid-row: 2;	
+}
+header h2{
+	font-family: 'Akira', sans-serif, arial, serif;
+	font-size: 15px;
+	color: var(--white);
+	text-align: center;
+	margin-top: 50px;
+}
+header h2::first-word{
+	color: var(--primary-color);
+}
+.intro{
+	background-color: var(--secondary-darkblue);	
+}
+.summary{
+	background: linear-gradient(180deg, var(--secondary-darkblue) 0%, var(--secondary-color) 250%);
+	text-align: center;
+	height: 50vh;
+}
+.summary a{
+	display: block;
+	background-color: var(--secondary-color);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 5px;
+	width: 80vw;
+	margin-left: 5vw;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-decoration: none;
+	font-weight: 700;
+}
+.summary p{
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+/* 2 */
+.preamble{
+	height: 100vh;
+	background-image: url('https://yorickdv.blob.core.windows.net/portfolio-public/photos/zengarden/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5), inset 2px 1px 10px rgba(0, 0, 0, 0.5);	
+}
+.preamble p{
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+}
+
+/* 3 */
+.explanation{
+	height: 100vh;
+	background: linear-gradient(-70deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);	
+}
+.explanation p{
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+}
+/* 4 */
+.participation{
+	height: 100vh;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5), inset 2px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.participation p{
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+}
+/* 5 */
+.benefits{
+	height: 100vh;
+	background: linear-gradient(50deg, var(--secondary-color) 0%, var(--black) 150%);
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+.benefits p{
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+/* 6 */
+.requirements{
+	height: auto;
+	background: linear-gradient(50deg, var(--secondary-color) 0%, var(--primary-color) 50%, var(--secondary-darkblue) 80%, var(--black) 100%);
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5), inset 2px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.requirements p{
+	display: block;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 0px;
+}
+/* footer */
+footer{
+	background-color: var(--secondary-darkblue);
+	height: 50px;
+	padding-left: 2.5vw;
+}
+footer a{
+	display: inline-block;
+	color: var(--white);
+	text-decoration: none;
+	width: 18vw;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+}
+/* sidebar */
+.sidebar{
+	height: auto;
+	background: linear-gradient(180deg, var(--secondary-darkblue) 0%, var(--black) 150%);
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5), inset 2px 1px 10px rgba(0, 0, 0, 0.5);
+}
+.sidebar h3{
+	margin: 0;
+	height: 30px;
+	line-height: 30px;
+}
+.sidebar ul{
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.sidebar li{
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.sidebar a{
+	text-decoration: none;
+}
+.sidebar a:hover{
+	text-decoration: underline;
+}
+nav{
+	width: 100%; /* Set the desired width */
+	overflow-x: auto;
+	white-space: nowrap;
+}
+.design-selection nav ul{
+	width: 100vw;
+}
+.design-selection nav ul li{
+	width: 100vw;
+}
+.design-archives nav ul{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+/* ipad */
+@media only screen and (min-width: 768px){
+h3{
+	font-size: 30px;
+	padding-top: 50px;
+}
+/* 1 */
+header h1{
+	font-size: 55px;
+}
+header h2{
+	font-size: 30px;
+}
+.summary a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 30vw;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-decoration: none;
+}
+.summary p{
+	margin-left: 25vw;
+	width: 40vw;
+}
+p{
+	font-size: 18px;
+}
+
+/* 2 */
+.preamble{
+	display: grid;
+	grid-template-columns: 10vw 80vw 10vw;
+	grid-template-rows: 150px 100px 100px 100px;
+}
+.preamble h3{
+	grid-column: 1 / span 3;
+}
+.preamble p{
+	grid-column: 2;
+	padding-bottom: 20px;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+
+/* 3 */
+.explanation{
+	display: grid;
+	grid-template-columns: 10vw 80vw 10vw;
+	grid-template-rows: 150px 150px 150px;
+}
+.explanation h3{
+	grid-column: 1 / span 3;
+}
+.explanation p{
+	grid-column: 2;
+	padding-bottom: 20px;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+/* 4 */
+.participation{
+	display: grid;
+	grid-template-columns: 10vw 80vw 10vw;
+	grid-template-rows: 150px 150px 150px 150px;
+}
+.participation h3{
+	grid-column: 1 / span 3;
+}
+.participation p{
+	grid-column: 2;
+	padding-bottom: 20px;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+/* 5 */
+.benefits{
+	display: grid;
+	grid-template-columns: 10vw 80vw 10vw;
+	grid-template-rows: 150px 150px;
+}
+.benefits h3{
+	grid-column: 1 / span 3;
+}
+.benefits p{
+	grid-column: 2;
+	padding-bottom: 20px;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+/* 6 */
+.requirements{
+	display: grid;
+	grid-template-columns: 10vw 80vw 10vw;
+	grid-template-rows: 150px 180px 260px 140px 150px 100px;
+}
+.requirements h3{
+	grid-column: 1 / span 3;
+}
+.requirements p{
+	grid-column: 2;
+	padding-bottom: 20px;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0px;
+}
+/* footer */
+footer{
+	height: 100px;
+}
+footer a{
+	font-size: 20px;
+	height: 100px;
+	line-height: 100px;
+}
+/* sidebar */
+.wrapper{
+	display: grid;
+	grid-template-columns: 45vw 45vw;
+	padding-left: 5vw;
+	grid-template-rows: auto auto;
+	row-gap: 20px;
+}
+.sidebar ul{
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+.sidebar li{
+	display: list-item;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.sidebar a{
+	text-decoration: none;
+}
+.sidebar a:hover{
+	text-decoration: underline;
+}
+nav{
+	width: 100%; /* Set the desired width */
+	overflow-x: auto;
+	white-space: nowrap;
+}
+.design-selection nav ul{
+	width: auto;
+}
+.design-selection nav ul li{
+	width: auto;
+}
+.design-archives nav ul{
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.zen-resources{
+	grid-column: 1 / span 2;
+	display: grid;
+	grid-template-columns: 45vw 45vw;
+}
+.design-selection h3{
+	text-align: left;
+	padding-left: 28px;
+}
+.design-archives h3{
+	text-align: left;
+	padding-left: 28px;
+}
+.zen-resources h3{
+	text-align: left;
+	padding-left: 28px;
+}
+}
+
+/*pc*/
+@media only screen and (min-width: 1024px){
+	h3{
+		font-size: 30px;
+		padding-top: 50px;
+	}
+	/* 1 */
+	header h1{
+		font-size: 70px;
+	}
+	.summary a{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 200px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 250px;
+		text-decoration: none;
+	}
+	.summary a:hover{
+		background: rgba( 193, 0, 125);
+		box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+		animation: perspectiveAnimation 0.3s forwards;
+	}
+	.summary p{
+		margin-left: auto;
+		margin-right: auto ;
+		width: 700px;
+	}
+	/* 2 */
+	.preamble{
+		display: block;
+		white-space: pre-wrap;
+	}
+	.preamble p{
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* 3 */
+	.explanation{
+		display: block;
+		white-space: pre-wrap;
+	}
+	.explanation p{
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* 4 */
+	.participation{
+		display: block;
+		white-space: pre-wrap;
+	}
+	.participation p{
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* 5 */
+	.benefits{
+		display: block;
+		white-space: pre-wrap;
+	}
+	.benefits p{
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* 6 */
+	.requirements{
+		height: 100vh;
+		display: block;
+		white-space: pre-wrap;
+	}
+	.requirements p{
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/* footer */
+	footer a{
+		transition: transform 0.3s;
+	}
+	footer a:hover{
+		background: rgba( 255, 255, 255, 0.25 );
+		box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+		backdrop-filter: blur( 3.5px );
+		-webkit-backdrop-filter: blur( 3.5px );
+		border-radius: 5px;
+		animation: perspectiveAnimation 0.3s forwards;
+	}
+	@keyframes perspectiveAnimation {
+		from {
+		  transform: perspective(0) rotateY(0);
+		}
+		to {
+		  transform: perspective(8000px) rotateY(0.1deg);
+		}
+	  }
+	.zen-resources ul{
+		display: grid;
+		grid-template-columns: auto auto auto auto auto; 
+		padding-bottom: 20px;
+	}
+	.zen-resources h3{
+		padding-top: 0px;
+		padding-bottom: 20px;
+	}
+}
