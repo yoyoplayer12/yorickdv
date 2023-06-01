@@ -19,7 +19,7 @@ let enemyHealth = 2;
 let sealdead = false
 
 function setup(){
-    cursor("mousedot.png", 12.5, 12.5)      //snipermuis
+    cursor("https://yorickdv.blob.core.windows.net/portfolio-public/photos/beachpuppies/mousedot.png", 12.5, 12.5)      //snipermuis
     createCanvas(1400, 750);
     background("#87CEFA");
     angleMode(DEGREES);

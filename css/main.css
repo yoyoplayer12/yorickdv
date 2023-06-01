@@ -7,11 +7,11 @@ lightest-background */
 
 @font-face {
     font-family: 'montserrat-thin';
-    src: url('../fonts/Montserrat/Montserrat-Thin.ttf') format('truetype');
+    src: url('https://yorickdv.blob.core.windows.net/portfolio-public/fonts/Montserrat/Montserrat-Thin.ttf') format('truetype');
 }
 @font-face {
     font-family: 'montserrat-regular';
-    src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    src: url('https://yorickdv.blob.core.windows.net/portfolio-public/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
 }
 html{
     scroll-behavior: smooth;
