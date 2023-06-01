@@ -188,15 +188,15 @@ const standDepth = 2;
 //TEXTURES_______________________________________________________________
 const textureLoader = new THREE.TextureLoader();
 //grass texture for the floor
-const stone = textureLoader.load('textures/stones.jpg');
+const stone = textureLoader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/stones.jpg');
 stone.repeat.set(1, 1);
 stone.wrapS = THREE.RepeatWrapping;
 //white-red texture for the missing face
-const whiteRedTexture = textureLoader.load('textures/white-red_texture.jpg');
+const whiteRedTexture = textureLoader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/white-red_texture.jpg');
 whiteRedTexture.repeat.set(3, 1);
 whiteRedTexture.wrapS = THREE.RepeatWrapping;
 //wood texture for the left and right wall
-const woodTexture = textureLoader.load('textures/wood_texture.jpg');
+const woodTexture = textureLoader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/wood_texture.jpg');
 woodTexture.repeat.set(1, 1);
 woodTexture.wrapS = THREE.RepeatWrapping;
 //______________________________________________________________________
@@ -227,7 +227,7 @@ scene.add(rightWall);
 //baloon_______________________________________________________________
 function loadBalloonModel(x) {
 	const loader = new GLTFLoader();
-	loader.load('assets/balloon/scene.gltf', function (gltf) {
+	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/balloon/balloon.gltf', function (gltf) {
 		const newBalloon = gltf.scene;
 		newBalloon.scale.set(0.005, 0.005, 0.005);
 		newBalloon.position.set(x, 0, -3.5); // Adjust the position as needed 
@@ -241,7 +241,7 @@ function loadBalloonModel(x) {
 }
 function loadStand() {
 	const loader = new GLTFLoader();
-	loader.load('assets/stand/stand.gltf', function (gltf) {
+	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/stand/stand.gltf', function (gltf) {
 		const newStand = gltf.scene;
 		newStand.scale.set(0.4, 0.4, 0.4);
 		newStand.position.set(0, 0, 0); // Adjust the position as needed 
@@ -299,7 +299,7 @@ function loadDartModel(color) {
 	return new Promise((resolve, reject) => {
 		const loader = new GLTFLoader();
 
-		loader.load(`assets/darts/${color}/scene.gltf`, function (gltf) {
+		loader.load(`https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/darts/${color}/scene.gltf`, function (gltf) {
 			const dart = gltf.scene;
 
 			dart.scale.set(0.01, 0.01, 0.01);
@@ -363,7 +363,7 @@ function handleController(controller) {
 //sideassets
 function loadCroissant(y, x, r) {
 	const loader = new GLTFLoader();
-	loader.load('assets/croissant/scene.gltf', function (gltf) {
+	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/croissant/scene.gltf', function (gltf) {
 		const newCroissant = gltf.scene;
 		newCroissant.scale.set(1, 1, 1);
 		newCroissant.position.set(y, 0.4, x); // Adjust the position as needed 
@@ -377,7 +377,7 @@ function loadCroissant(y, x, r) {
 }
 function loadBarrel(y, x, h, r, rx) {
 	const loader = new GLTFLoader();
-	loader.load('assets/barrel/scene.gltf', function (gltf) {
+	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/barrel/scene.gltf', function (gltf) {
 		const newBarrel = gltf.scene;
 		newBarrel.scale.set(1, 1, 1);
 		newBarrel.position.set(y, h, x); // Adjust the position as needed 
@@ -393,7 +393,7 @@ function loadBarrel(y, x, h, r, rx) {
 }
 function loadDartboard(y, x, h, r) {
 	const loader = new GLTFLoader();
-	loader.load('assets/dartboard/scene.gltf', function (gltf) {
+	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/dartboard/dartboard_1k.gltf', function (gltf) {
 		const newBoard = gltf.scene;
 		newBoard.scale.set(1, 1, 1);
 		newBoard.position.set(y, h, x); // Adjust the position as needed 
@@ -407,7 +407,7 @@ function loadDartboard(y, x, h, r) {
 }
 function loadYoda(y, x, h, r) {
 	const loader = new GLTFLoader();
-	loader.load('assets/yoda/scene.gltf', function (gltf) {
+	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/yoda/scene.gltf', function (gltf) {
 		const newYoda = gltf.scene;
 		newYoda.scale.set(0.015, 0.015, 0.015);
 		newYoda.position.set(y, h, x); // Adjust the position as needed 
