@@ -37,7 +37,7 @@ nav a {
 	text-indent: -9999px;
 	height: 16px;
 	width: 16px;
-	background: url(../images/apps.png);
+	/* background: url(../images/apps.png); */
 	margin-top:5px;
 	}
 .signin {
@@ -62,7 +62,7 @@ nav a {
 	border-right: 1px solid #c0c0c0;
 	border-bottom: 1px solid #d9d9d9;
 	border-left: 1px solid #d9d9d9;
-	background: url(../images/micro.png) no-repeat 95% center;
+	/* background: url(../images/micro.png) no-repeat 95% center; */
 	margin-top: 60px;
 	margin-bottom: 15px;
     font-size: .9em;
