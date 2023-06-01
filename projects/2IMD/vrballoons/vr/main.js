@@ -227,6 +227,7 @@ scene.add(rightWall);
 //baloon_______________________________________________________________
 function loadBalloonModel(x) {
 	const loader = new GLTFLoader();
+	loader.setCrossOrigin('anonymous'); // Ensure anonymous cross-origin request
 	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/balloon/balloon.gltf', function (gltf) {
 		const newBalloon = gltf.scene;
 		newBalloon.scale.set(0.005, 0.005, 0.005);
@@ -241,6 +242,7 @@ function loadBalloonModel(x) {
 }
 function loadStand() {
 	const loader = new GLTFLoader();
+	loader.setCrossOrigin('anonymous'); // Ensure anonymous cross-origin request
 	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/stand/stand.gltf', function (gltf) {
 		const newStand = gltf.scene;
 		newStand.scale.set(0.4, 0.4, 0.4);
@@ -298,7 +300,7 @@ function animateJoda() {
 function loadDartModel(color) {
 	return new Promise((resolve, reject) => {
 		const loader = new GLTFLoader();
-
+		loader.setCrossOrigin('anonymous'); // Ensure anonymous cross-origin request
 		loader.load(`https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/darts/${color}/scene.gltf`, function (gltf) {
 			const dart = gltf.scene;
 
@@ -363,6 +365,7 @@ function handleController(controller) {
 //sideassets
 function loadCroissant(y, x, r) {
 	const loader = new GLTFLoader();
+	loader.setCrossOrigin('anonymous'); // Ensure anonymous cross-origin request
 	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/croissant/scene.gltf', function (gltf) {
 		const newCroissant = gltf.scene;
 		newCroissant.scale.set(1, 1, 1);
@@ -393,6 +396,7 @@ function loadBarrel(y, x, h, r, rx) {
 }
 function loadDartboard(y, x, h, r) {
 	const loader = new GLTFLoader();
+	loader.setCrossOrigin('anonymous'); // Ensure anonymous cross-origin request
 	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/dartboard/dartboard_1k.gltf', function (gltf) {
 		const newBoard = gltf.scene;
 		newBoard.scale.set(1, 1, 1);
@@ -407,6 +411,7 @@ function loadDartboard(y, x, h, r) {
 }
 function loadYoda(y, x, h, r) {
 	const loader = new GLTFLoader();
+	loader.setCrossOrigin('anonymous'); // Ensure anonymous cross-origin request
 	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/yoda/scene.gltf', function (gltf) {
 		const newYoda = gltf.scene;
 		newYoda.scale.set(0.015, 0.015, 0.015);
