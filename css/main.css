@@ -7,17 +7,18 @@ lightest-background */
 
 @font-face {
     font-family: 'montserrat-thin';
-    src: url('https://yorickdv.blob.core.windows.net/portfolio-public/fonts/Montserrat/Montserrat-Thin.ttf') format('truetype');
+    src: url('../fonts/Montserrat/Montserrat-Thin.ttf') format('truetype');
 }
 @font-face {
     font-family: 'montserrat-regular';
-    src: url('https://yorickdv.blob.core.windows.net/portfolio-public/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
 }
 html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: montserrat-regular, sans-serif, arial;
+    font-family: montserrat-regular;
+    font-weight: 400;
     background-color: var(--offwhite);
 }
 a:active, a:visited, a:link{
@@ -27,9 +28,9 @@ a:hover{
     text-decoration: underline;
 }
 a.fptitle:active, a.fptitle:hover, a.fptitle:visited, a.fptitle:link{
-    font-family: montserrat-thin, sans-serif, arial;
+    font-family: montserrat-thin;
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 100;
     text-decoration: none;
 }
 a.fptitle:hover{
