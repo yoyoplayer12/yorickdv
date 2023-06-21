@@ -21,6 +21,9 @@ body{
     font-weight: 400;
     background-color: var(--offwhite);
 }
+.centeredflex{
+    display: block;
+}
 .colorblock{
     display: inline-block;
     width: 20vw;
@@ -169,8 +172,12 @@ a.fptitle:hover{
         grid-template-columns: 200px 200px 200px 200px 200px;
         grid-template-rows: 200px 30px 30px;
         width: 1000px;
-        margin-left: 5vw;
+        margin-left: auto;
         height: 200px;
-        box-shadow: -9px 9px 5px -2px rgba(0,0,0,0.4);
+    }
+    .centeredflex{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
     }
 }
