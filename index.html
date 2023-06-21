@@ -9,9 +9,27 @@
     <title>Yorick Devleeschouwer</title>
 </head>
 <body class="lightest-background">
+    <div class="colorblocks">
+        <div class="colorblock lightest-background"></div>
+        <div class="colorblock light-background"></div>
+        <div class="colorblock maincolor-background"></div>
+        <div class="colorblock lightdark-background"></div>
+        <div class="colorblock dark-background"></div>
+        <p class="dark-color" id="dark"></p>
+        <p class="dark-color" id="lightdark"></p>
+        <p class="dark-color" id="maincolor"></p>
+        <p class="dark-color" id="light"></p>
+        <p class="dark-color" id="lightest"></p>
+
+        <p class="dark-color">Lightest color</p>
+        <p class="dark-color">Light color</p>
+        <p class="dark-color">Main color</p>
+        <p class="dark-color">Lightdark color</p>
+        <p class="dark-color">Dark color</p>
+    </div>
     <header class="centered-fp lightest-background">
         <a href="#firstinfo" class="dark-color fptitle">Yorick Devleeschouwer</a>
-    </header>
+    </header>    
     <section class="firstinfo dark-background" id="firstinfo">
         <div class="firstinfo-container">
             <a href="#develop" class="develop pickscreen1 lightest-color">Develop</a>
@@ -52,6 +70,7 @@
             var maincolor = palette[2];
             var light = palette[3];
             var lightest = palette[4];
+            console.log(dark);
             
 
             //backgroundcolors
@@ -66,6 +85,12 @@
             assignColorToElement(".maincolor-color", maincolor); // Assign color to element with id "element-1"
             assignColorToElement(".light-color", light); // Assign color to element with id "element-1"
             assignColorToElement(".lightest-color", lightest); // Assign color to element with id "element-1"
+            //set color names
+            document.getElementById("dark").innerHTML = "rgb(" + dark + ")";
+            document.getElementById("lightdark").innerHTML = "rgb(" + lightdark + ")";
+            document.getElementById("maincolor").innerHTML = "rgb(" + maincolor + ")";
+            document.getElementById("light").innerHTML = "rgb(" + light + ")";
+            document.getElementById("lightest").innerHTML = "rgb(" + lightest + ")";
 
 
 
