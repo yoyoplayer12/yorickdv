@@ -29,7 +29,7 @@ a:hover{
 }
 a.fptitle:active, a.fptitle:hover, a.fptitle:visited, a.fptitle:link{
     font-family: montserrat-thin;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 100;
     text-decoration: none;
 }
@@ -47,12 +47,12 @@ a.fptitle:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 .firstinfo-container{
     display: grid;
-    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 30% 30% 30%;
     grid-template-rows: 200px 200px 200px;
 }
 .pickscreen1{
@@ -82,6 +82,12 @@ a.fptitle:hover{
     width: 100%;
     height: 100vh;
 }
+.developsection a{
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
 .djsection{
     display: flex;
     flex-direction: column;
@@ -97,4 +103,33 @@ a.fptitle:hover{
     align-items: center;
     width: 100%;
     height: 100vh;
+}
+.designsection a{
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    a.fptitle:active, a.fptitle:hover, a.fptitle:visited, a.fptitle:link{
+        font-size: 3rem;
+    }
+    .firstinfo-container{
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+    }
+}
+/* desktop */
+@media only screen and (min-width: 1025px) {
+    a.fptitle:active, a.fptitle:hover, a.fptitle:visited, a.fptitle:link{
+        font-size: 3rem;
+    }
+    .firstinfo-container{
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+    }
 }
