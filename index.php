@@ -80,18 +80,15 @@
                 <p class="dark-color" id="maincolor"></p>
                 <p class="dark-color" id="light"></p>
                 <p class="dark-color" id="lightest"></p>
-        
-                <p class="dark-color">Lightest color</p>
-                <p class="dark-color">Light color</p>
-                <p class="dark-color">Main color</p>
-                <p class="dark-color">Lightdark color</p>
-                <p class="dark-color">Dark color</p>
             <?php endif; ?>
         </div>
     </div>
+    <?php if(!$isHTTPS): ?>
+        <p class="httpexplanation"  style="background-color: black;color:white;">Don't like these colors? try reloading the page.</p>
+    <?php endif; ?>
     <header class="centered-fp lightest-background">
         <a href="#firstinfo" class="dark-color fptitle">Yorick Devleeschouwer</a>
-    </header>    
+    </header>
     <section class="firstinfo dark-background" id="firstinfo">
         <div class="firstinfo-container">
             <a href="#develop" class="develop pickscreen1 lightest-color">Develop</a>
