@@ -151,6 +151,7 @@
         assignColorToElement(".maincolor-color", maincolor); // Assign color to element with id "element-1"
         assignColorToElement(".light-color", light); // Assign color to element with id "element-1"
         assignColorToElement(".lightest-color", lightest); // Assign color to element with id "element-1"
+        console.log("test");
         if(http.readyState == 4 && http.status == 200) {
             var palette = JSON.parse(http.responseText).result;
             var dark = palette[0];
