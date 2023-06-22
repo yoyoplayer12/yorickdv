@@ -12,6 +12,18 @@ lightest-background */
     font-family: 'montserrat-regular';
     src: url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
 }
+.httpexplanation{
+    position: absolute;
+    font-family: montserrat-thin;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    top: 94vh;
+    margin: 0;
+    height: 6vh;
+    line-height: 6vh;
+    width: 100vw;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -56,7 +68,7 @@ body{
     display: grid;
     position: absolute;
     grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
-    grid-template-rows: 20vw 30px 30px;
+    grid-template-rows: 20vw 30px;
     width: 90vw;
     margin-left: 5vw;
     height: 20vw;
@@ -93,6 +105,7 @@ a.fptitle:hover{
 }
 .firstinfo-container{
     display: grid;
+    width: 100vw;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 200px 200px 200px;
 }
@@ -166,6 +179,9 @@ a.fptitle:hover{
         visibility: visible;
         font-size: 15px;
     }
+    .httpexplanation{
+        font-size: 20px;
+    }
 }
 /* desktop */
 @media only screen and (min-width: 1025px) {
@@ -206,5 +222,8 @@ a.fptitle:hover{
     .bottext{
         height: 50px;
         line-height: 50px;
+    }
+    .httpexplanation{
+        font-size: 25px;
     }
 }
