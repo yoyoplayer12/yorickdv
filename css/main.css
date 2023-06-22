@@ -21,6 +21,12 @@ body{
     font-weight: 400;
     background-color: var(--offwhite);
 }
+p.toptext{
+    grid-column: 1 / 6;
+}
+.bottext{
+    grid-column: 1 / 6;
+}
 .centeredflex{
     display: block;
 }
