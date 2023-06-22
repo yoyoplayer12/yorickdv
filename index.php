@@ -139,6 +139,11 @@
         var maincolor = "rgb(114,115,116)";
         var light = "rgb(200,168,111)";
         var lightest = "rgb(251,242,192)";
+        document.getElementById("dark").innerHTML = "rgb(" + dark + ")";
+        document.getElementById("lightdark").innerHTML = "rgb(" + lightdark + ")";
+        document.getElementById("maincolor").innerHTML = "rgb(" + maincolor + ")";
+        document.getElementById("light").innerHTML = "rgb(" + light + ")";
+        document.getElementById("lightest").innerHTML = "rgb(" + lightest + ")";
         if(http.readyState == 4 && http.status == 200) {
             var palette = JSON.parse(http.responseText).result;
             var dark = palette[0];
