@@ -11,11 +11,10 @@
         echo $isHTTPS ? "true" : "false";
         exit();
       }
-      
       // Check if the HTTPS status has been set in the session
       if (isset($_SESSION['isHTTPS'])) {
         $isHTTPS = $_SESSION['isHTTPS'];
-      
+        var_dump($isHTTPS);
         if ($isHTTPS) {
           // Show content for HTTPS
           $httpsStatus = "This is an HTTPS page.";
@@ -27,8 +26,6 @@
         // HTTPS status not available, handle accordingly
         $httpsStatus = "Unable to determine HTTPS status.";
       }
-      var_dump($httpsStatus);
-        var_dump($_SESSION['isHTTPS']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -71,11 +68,13 @@
                 <p class="toptext">Can't see any colors here?</p>
                 <p class="bottext">Try changing the https to http!</p>
             </div>
-            <div class="colorblock lightest-background"></div>
-            <div class="colorblock light-background"></div>
-            <div class="colorblock maincolor-background"></div>
-            <div class="colorblock lightdark-background"></div>
-            <div class="colorblock dark-background"></div>
+            <?php if($isHTTPS): ?>
+                <div class="colorblock lightest-background"></div>
+                <div class="colorblock light-background"></div>
+                <div class="colorblock maincolor-background"></div>
+                <div class="colorblock lightdark-background"></div>
+                <div class="colorblock dark-background"></div>
+            <?php endif; ?>
 
             <p class="dark-color" id="dark"></p>
             <p class="dark-color" id="lightdark"></p>
