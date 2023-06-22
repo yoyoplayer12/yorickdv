@@ -75,11 +75,15 @@
                 <div class="colorblock lightdark-background"></div>
                 <div class="colorblock dark-background"></div>
 
-                <p class="dark-color" id="dark"></p>
-                <p class="dark-color" id="lightdark"></p>
-                <p class="dark-color" id="maincolor"></p>
-                <p class="dark-color" id="light"></p>
+                
+                
+                
+                
                 <p class="dark-color" id="lightest"></p>
+                <p class="dark-color" id="light"></p>
+                <p class="dark-color" id="maincolor"></p>
+                <p class="dark-color" id="lightdark"></p>
+                <p class="dark-color" id="dark"></p>
             <?php endif; ?>
         </div>
     </div>
@@ -122,11 +126,6 @@
     </section>
 </body>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      // Your code here
-      // This code will execute when the document has finished loading
-      console.log("Document has finished loading");
-    });
     var url = "http://colormind.io/api/";
     var data = {
         model : "default"
@@ -135,10 +134,13 @@
     var http = new XMLHttpRequest();
 
     http.onreadystatechange = function() {
-        console.log("test1");
+        var dark = "rgb(9,98,119)";
+        var lightdark = "rgb(41,44,47)";
+        var maincolor = "rgb(114,115,116)";
+        var light = "rgb(200,168,111)";
+        var lightest = "rgb(251,242,192)";
         if(http.readyState == 4 && http.status == 200) {
             var palette = JSON.parse(http.responseText).result;
-            console.log("test2");
             var dark = palette[0];
             var lightdark = palette[1];
             var maincolor = palette[2];
@@ -163,12 +165,6 @@
             document.getElementById("maincolor").innerHTML = "rgb(" + maincolor + ")";
             document.getElementById("light").innerHTML = "rgb(" + light + ")";
             document.getElementById("lightest").innerHTML = "rgb(" + lightest + ")";
-
-
-
-        }
-        else{
-            console.log("no http");
         }
     }
 
@@ -187,5 +183,4 @@
         }
     }
 </script>
-
 </html>
