@@ -1,16 +1,35 @@
 <?php
-$isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
-var_dump($isHTTPS);
-if ($isHTTPS) {
-  // Show content for HTTPS
-  $httpsStatus = "This is an HTTPS page.";
-} else {
-  // Show content for non-HTTPS
-  $httpsStatus = "This is not an HTTPS page.";
-}
-
-// Access the $httpsStatus variable in your PHP code or return it as a response
-echo $httpsStatus;
+    require_once __DIR__ . '/bootstrap.php';
+    
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
+      
+        // Set the HTTPS status in the session
+        $_SESSION['isHTTPS'] = $isHTTPS;
+      
+        // Return the HTTPS status as the response
+        echo $isHTTPS ? "true" : "false";
+        exit();
+      } else {
+        // Check if the HTTPS status has been set in the session
+        if (isset($_SESSION['isHTTPS'])) {
+          $isHTTPS = $_SESSION['isHTTPS'];
+      
+          if ($isHTTPS) {
+            // Show content for HTTPS
+            $httpsStatus = "This is an HTTPS page.";
+          } else {
+            // Show content for non-HTTPS
+            $httpsStatus = "This is not an HTTPS page.";
+          }
+        } else {
+          // HTTPS status not available, handle accordingly
+          $httpsStatus = "Unable to determine HTTPS status.";
+        }
+      
+        // Access the $httpsStatus variable in your PHP code
+        echo $httpsStatus;
+      }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,6 +81,7 @@ echo $httpsStatus;
     <section class="developsection lightdark-background light-color" id="develop">
         <a href="projects/1IMD/BeachPuppies/game.html" class="light-color">Beach Puppies (game) - 1st year IMD</a>
         <a href="projects/1IMD/clubdefender/portrait.html" class="light-color">Cub Defender (game) - 1st year IMD</a>
+        <a href="https://copoll.live" class="light-color">Copoll</a>
         <!-- <a href="projects/2IMD/vrballoons/vr/dist/index.html">vr game - 2nd year IMD</a> thisones fucked because azure cors problem -->
     </section>
     <section class="djsection dark-background lightest-color" id="dj">
@@ -135,13 +155,21 @@ echo $httpsStatus;
     }
 
 
-    // Send an AJAX request to a PHP script
+    // Send an AJAX request to the current page URL
     $.ajax({
       type: 'POST',
-      url: 'process.php',
+      url: window.location.href,
       data: { isHTTPS: window.location.protocol === "https:" },
       success: function(response) {
         console.log(response);
+        // Handle the response here (e.g., show content based on HTTPS status)
+        if (response === "true") {
+          // Show content for HTTPS
+          $('#content').text("This is an HTTPS page.");
+        } else {
+          // Show content for non-HTTPS
+          $('#content').text("This is not an HTTPS page.");
+        }
       },
       error: function(xhr, status, error) {
         console.log(error);
