@@ -122,6 +122,11 @@
     </section>
 </body>
 <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Your code here
+      // This code will execute when the document has finished loading
+      console.log("Document has finished loading");
+    });
     var url = "http://colormind.io/api/";
     var data = {
         model : "default"
@@ -130,9 +135,10 @@
     var http = new XMLHttpRequest();
 
     http.onreadystatechange = function() {
+        console.log("test1");
         if(http.readyState == 4 && http.status == 200) {
             var palette = JSON.parse(http.responseText).result;
-
+            console.log("test2");
             var dark = palette[0];
             var lightdark = palette[1];
             var maincolor = palette[2];
