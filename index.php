@@ -1,16 +1,17 @@
 <?php
 $isHTTPS = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on';
+$isHTTPS = $isHTTPS || ($_SERVER['SERVER_PORT'] === 443);
 
 if ($isHTTPS) {
   // Show content for HTTPS
-  $httpsStatus = "This is an HTTPS page.";
+  $http = false;
 } else {
   // Show content for non-HTTPS
-  $httpsStatus = "This is not an HTTPS page.";
+  $http = true;
 }
 
 // Access the $httpsStatus variable in your PHP code
-echo $httpsStatus;
+echo $http;
 ?>
 <!DOCTYPE html>
 <html lang="en">
