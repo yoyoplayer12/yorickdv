@@ -4,7 +4,6 @@ maincolor-background
 light-background
 lightest-background */
 
-
 @font-face {
     font-family: 'montserrat-thin';
     src: url('../fonts/Montserrat/Montserrat-Thin.ttf') format('truetype');
@@ -21,11 +20,25 @@ body{
     font-weight: 400;
     background-color: var(--offwhite);
 }
-p.toptext{
+.httpstext{
     grid-column: 1 / 6;
 }
+.toptext{
+    height: auto;
+    line-height: auto;
+    margin: 0;
+    margin-top: 50px;
+}
 .bottext{
-    grid-column: 1 / 6;
+    height: auto;
+    line-height: auto;
+    margin: 0;
+}
+.colorblocks p.toptext{
+    visibility: visible;
+}
+.colorblocks p.bottext{
+    visibility: visible;
 }
 .centeredflex{
     display: block;
@@ -185,5 +198,13 @@ a.fptitle:hover{
         display: flex;
         justify-content: center;
         width: 100vw;
+    }
+    .toptext{
+        height: 50px;
+        line-height: 50px;
+    }
+    .bottext{
+        height: 50px;
+        line-height: 50px;
     }
 }
