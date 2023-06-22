@@ -126,15 +126,8 @@
     </section>
 </body>
 <script>
-    var url = "http://colormind.io/api/";
-    var data = {
-        model : "default"
-    }
-
-    var http = new XMLHttpRequest();
-
-    http.onreadystatechange = function() {
-        var dark = "rgb(9,98,119)";
+    document.addEventListener("DOMContentLoaded", function() {
+            var dark = "rgb(9,98,119)";
         var lightdark = "rgb(41,44,47)";
         var maincolor = "rgb(114,115,116)";
         var light = "rgb(200,168,111)";
@@ -151,7 +144,15 @@
         assignColorToElement(".maincolor-color", maincolor); // Assign color to element with id "element-1"
         assignColorToElement(".light-color", light); // Assign color to element with id "element-1"
         assignColorToElement(".lightest-color", lightest); // Assign color to element with id "element-1"
-        console.log("test");
+    });
+    var url = "http://colormind.io/api/";
+    var data = {
+        model : "default"
+    }
+
+    var http = new XMLHttpRequest();
+
+    http.onreadystatechange = function() {
         if(http.readyState == 4 && http.status == 200) {
             var palette = JSON.parse(http.responseText).result;
             var dark = palette[0];
