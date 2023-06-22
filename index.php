@@ -139,11 +139,18 @@
         var maincolor = "rgb(114,115,116)";
         var light = "rgb(200,168,111)";
         var lightest = "rgb(251,242,192)";
-        document.getElementById("dark").innerHTML = "rgb(" + dark + ")";
-        document.getElementById("lightdark").innerHTML = "rgb(" + lightdark + ")";
-        document.getElementById("maincolor").innerHTML = "rgb(" + maincolor + ")";
-        document.getElementById("light").innerHTML = "rgb(" + light + ")";
-        document.getElementById("lightest").innerHTML = "rgb(" + lightest + ")";
+        //backgroundcolors
+        assignBackgroundColorToElement(".dark-background", dark); // Assign color to element with id "element-1"
+        assignBackgroundColorToElement(".lightdark-background", lightdark); // Assign color to element with id "element-1"
+        assignBackgroundColorToElement(".maincolor-background", maincolor); // Assign color to element with id "element-1"
+        assignBackgroundColorToElement(".light-background", light); // Assign color to element with id "element-1"
+        assignBackgroundColorToElement(".lightest-background", lightest); // Assign color to element with id "element-1"
+        //colors
+        assignColorToElement(".dark-color", dark); // Assign color to element with id "element-1"
+        assignColorToElement(".lightdark-color", lightdark); // Assign color to element with id "element-1"
+        assignColorToElement(".maincolor-color", maincolor); // Assign color to element with id "element-1"
+        assignColorToElement(".light-color", light); // Assign color to element with id "element-1"
+        assignColorToElement(".lightest-color", lightest); // Assign color to element with id "element-1"
         if(http.readyState == 4 && http.status == 200) {
             var palette = JSON.parse(http.responseText).result;
             var dark = palette[0];
