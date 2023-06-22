@@ -14,7 +14,6 @@
       // Check if the HTTPS status has been set in the session
       if (isset($_SESSION['isHTTPS'])) {
         $isHTTPS = $_SESSION['isHTTPS'];
-        var_dump($isHTTPS);
         if ($isHTTPS) {
           // Show content for HTTPS
           $httpsStatus = "This is an HTTPS page.";
@@ -65,9 +64,9 @@
     <div class="centeredflex">
         <div class="colorblocks">
             <?php if($isHTTPS): ?>
-                <div>
-                    <p class="toptext">Can't see any colors here?</p>
-                    <p class="bottext">Try changing the https to http!</p>
+                <div class="httpstext">
+                    <p class="toptext" style="background-color: black;color:white;">Can't see any colors here?</p>
+                    <p class="bottext" style="background-color: black;color:white;">Try reloading the page as http to get your random color palette!</p>
                 </div>
             <?php else: ?>
                 <div class="colorblock lightest-background"></div>
@@ -134,8 +133,6 @@
             var maincolor = palette[2];
             var light = palette[3];
             var lightest = palette[4];
-            console.log(dark);
-            
 
             //backgroundcolors
             assignBackgroundColorToElement(".dark-background", dark); // Assign color to element with id "element-1"
