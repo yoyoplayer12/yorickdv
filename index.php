@@ -1,17 +1,16 @@
 <?php
-$isHTTPS = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on';
-$isHTTPS = $isHTTPS || ($_SERVER['SERVER_PORT'] === 443);
-
+$isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
+var_dump($isHTTPS);
 if ($isHTTPS) {
   // Show content for HTTPS
-  $http = false;
+  $httpsStatus = "This is an HTTPS page.";
 } else {
   // Show content for non-HTTPS
-  $http = true;
+  $httpsStatus = "This is not an HTTPS page.";
 }
 
-// Access the $httpsStatus variable in your PHP code
-echo $http;
+// Access the $httpsStatus variable in your PHP code or return it as a response
+echo $httpsStatus;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +20,7 @@ echo $http;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <title>Yorick Devleeschouwer</title>
 </head>
 <body class="lightest-background">
@@ -76,64 +76,77 @@ echo $http;
     </section>
 </body>
 <script>
-    // var url = "http://colormind.io/api/";
-    // var data = {
-    //     model : "default"
-    // }
+    var url = "http://colormind.io/api/";
+    var data = {
+        model : "default"
+    }
 
-    // var http = new XMLHttpRequest();
+    var http = new XMLHttpRequest();
 
-    // http.onreadystatechange = function() {
-    //     if(http.readyState == 4 && http.status == 200) {
-    //         var palette = JSON.parse(http.responseText).result;
+    http.onreadystatechange = function() {
+        if(http.readyState == 4 && http.status == 200) {
+            var palette = JSON.parse(http.responseText).result;
 
-    //         var dark = palette[0];
-    //         var lightdark = palette[1];
-    //         var maincolor = palette[2];
-    //         var light = palette[3];
-    //         var lightest = palette[4];
-    //         console.log(dark);
+            var dark = palette[0];
+            var lightdark = palette[1];
+            var maincolor = palette[2];
+            var light = palette[3];
+            var lightest = palette[4];
+            console.log(dark);
             
 
-    //         //backgroundcolors
-    //         assignBackgroundColorToElement(".dark-background", dark); // Assign color to element with id "element-1"
-    //         assignBackgroundColorToElement(".lightdark-background", lightdark); // Assign color to element with id "element-1"
-    //         assignBackgroundColorToElement(".maincolor-background", maincolor); // Assign color to element with id "element-1"
-    //         assignBackgroundColorToElement(".light-background", light); // Assign color to element with id "element-1"
-    //         assignBackgroundColorToElement(".lightest-background", lightest); // Assign color to element with id "element-1"
-    //         //colors
-    //         assignColorToElement(".dark-color", dark); // Assign color to element with id "element-1"
-    //         assignColorToElement(".lightdark-color", lightdark); // Assign color to element with id "element-1"
-    //         assignColorToElement(".maincolor-color", maincolor); // Assign color to element with id "element-1"
-    //         assignColorToElement(".light-color", light); // Assign color to element with id "element-1"
-    //         assignColorToElement(".lightest-color", lightest); // Assign color to element with id "element-1"
-    //         //set color names
-    //         document.getElementById("dark").innerHTML = "rgb(" + dark + ")";
-    //         document.getElementById("lightdark").innerHTML = "rgb(" + lightdark + ")";
-    //         document.getElementById("maincolor").innerHTML = "rgb(" + maincolor + ")";
-    //         document.getElementById("light").innerHTML = "rgb(" + light + ")";
-    //         document.getElementById("lightest").innerHTML = "rgb(" + lightest + ")";
+            //backgroundcolors
+            assignBackgroundColorToElement(".dark-background", dark); // Assign color to element with id "element-1"
+            assignBackgroundColorToElement(".lightdark-background", lightdark); // Assign color to element with id "element-1"
+            assignBackgroundColorToElement(".maincolor-background", maincolor); // Assign color to element with id "element-1"
+            assignBackgroundColorToElement(".light-background", light); // Assign color to element with id "element-1"
+            assignBackgroundColorToElement(".lightest-background", lightest); // Assign color to element with id "element-1"
+            //colors
+            assignColorToElement(".dark-color", dark); // Assign color to element with id "element-1"
+            assignColorToElement(".lightdark-color", lightdark); // Assign color to element with id "element-1"
+            assignColorToElement(".maincolor-color", maincolor); // Assign color to element with id "element-1"
+            assignColorToElement(".light-color", light); // Assign color to element with id "element-1"
+            assignColorToElement(".lightest-color", lightest); // Assign color to element with id "element-1"
+            //set color names
+            document.getElementById("dark").innerHTML = "rgb(" + dark + ")";
+            document.getElementById("lightdark").innerHTML = "rgb(" + lightdark + ")";
+            document.getElementById("maincolor").innerHTML = "rgb(" + maincolor + ")";
+            document.getElementById("light").innerHTML = "rgb(" + light + ")";
+            document.getElementById("lightest").innerHTML = "rgb(" + lightest + ")";
 
 
 
-    //     }
-    // }
+        }
+    }
 
-    // http.open("POST", url, true);
-    // http.send(JSON.stringify(data));
-    // function assignBackgroundColorToElement(elementclass, color) {
-    //     var element = document.querySelectorAll(elementclass);
-    //     for (var i = 0; i < element.length; i++) {
-    //         element[i].style.backgroundColor = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
-    //     }
-    // }
-    // function assignColorToElement(elementclass, color) {
-    //     var element = document.querySelectorAll(elementclass);
-    //     for (var i = 0; i < element.length; i++) {
-    //         element[i].style.color = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
-    //     }
-    // }
-    // Check if the page is accessed via HTTPS
+    http.open("POST", url, true);
+    http.send(JSON.stringify(data));
+    function assignBackgroundColorToElement(elementclass, color) {
+        var element = document.querySelectorAll(elementclass);
+        for (var i = 0; i < element.length; i++) {
+            element[i].style.backgroundColor = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
+        }
+    }
+    function assignColorToElement(elementclass, color) {
+        var element = document.querySelectorAll(elementclass);
+        for (var i = 0; i < element.length; i++) {
+            element[i].style.color = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
+        }
+    }
+
+
+    // Send an AJAX request to a PHP script
+    $.ajax({
+      type: 'POST',
+      url: 'process.php',
+      data: { isHTTPS: window.location.protocol === "https:" },
+      success: function(response) {
+        console.log(response);
+      },
+      error: function(xhr, status, error) {
+        console.log(error);
+      }
+    });
 </script>
 
 </html>
