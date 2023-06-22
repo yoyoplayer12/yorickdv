@@ -105,7 +105,6 @@ a.fptitle:hover{
 }
 .firstinfo-container{
     display: grid;
-    width: 100vw;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 200px 200px 200px;
 }
