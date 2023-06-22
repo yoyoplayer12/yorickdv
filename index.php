@@ -64,29 +64,30 @@
 <body class="lightest-background">
     <div class="centeredflex">
         <div class="colorblocks">
-            <div>
-                <p class="toptext">Can't see any colors here?</p>
-                <p class="bottext">Try changing the https to http!</p>
-            </div>
             <?php if($isHTTPS): ?>
+                <div>
+                    <p class="toptext">Can't see any colors here?</p>
+                    <p class="bottext">Try changing the https to http!</p>
+                </div>
+            <?php else: ?>
                 <div class="colorblock lightest-background"></div>
                 <div class="colorblock light-background"></div>
                 <div class="colorblock maincolor-background"></div>
                 <div class="colorblock lightdark-background"></div>
                 <div class="colorblock dark-background"></div>
-            <?php endif; ?>
 
-            <p class="dark-color" id="dark"></p>
-            <p class="dark-color" id="lightdark"></p>
-            <p class="dark-color" id="maincolor"></p>
-            <p class="dark-color" id="light"></p>
-            <p class="dark-color" id="lightest"></p>
-    
-            <p class="dark-color">Lightest color</p>
-            <p class="dark-color">Light color</p>
-            <p class="dark-color">Main color</p>
-            <p class="dark-color">Lightdark color</p>
-            <p class="dark-color">Dark color</p>
+                <p class="dark-color" id="dark"></p>
+                <p class="dark-color" id="lightdark"></p>
+                <p class="dark-color" id="maincolor"></p>
+                <p class="dark-color" id="light"></p>
+                <p class="dark-color" id="lightest"></p>
+        
+                <p class="dark-color">Lightest color</p>
+                <p class="dark-color">Light color</p>
+                <p class="dark-color">Main color</p>
+                <p class="dark-color">Lightdark color</p>
+                <p class="dark-color">Dark color</p>
+            <?php endif; ?>
         </div>
     </div>
     <header class="centered-fp lightest-background">
