@@ -108,7 +108,7 @@
         <!-- <a href="projects/2IMD/vrballoons/vr/dist/index.html">vr game - 2nd year IMD</a> thisones fucked because azure cors problem -->
     </section>
     <section class="djsection dark-background lightest-color" id="dj">
-        <p class="lightest-color normaltitle">Dj</p>
+        <p class="lightest-color normaltitle">DJ</p>
         <a href="https://www.zwabber.be" class="lightest-color">Go to zwabber.be</a>
     </section>
     <section class="designsection lightdark-background lightest-color" id="design">
