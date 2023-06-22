@@ -97,20 +97,28 @@
         </div>
     </section>
     <section class="developsection lightdark-background light-color" id="develop">
+       <p class="light-color normaltitle">Develop</p>
         <a href="projects/1IMD/BeachPuppies/game.html" class="light-color">Beach Puppies (game) - 1st year IMD</a>
         <a href="projects/1IMD/clubdefender/portrait.html" class="light-color">Cub Defender (game) - 1st year IMD</a>
         <a href="https://copoll.live" class="light-color">Copoll</a>
         <!-- <a href="projects/2IMD/vrballoons/vr/dist/index.html">vr game - 2nd year IMD</a> thisones fucked because azure cors problem -->
     </section>
     <section class="djsection dark-background lightest-color" id="dj">
+        <p class="lightest-color normaltitle">Dj</p>
         <a href="https://www.zwabber.be" class="lightest-color">Go to zwabber.be</a>
     </section>
     <section class="designsection lightdark-background light-color" id="design">
+        <p class="light-color normaltitle">Design</p>
         <a href="projects/1IMD/doodle/index.html" class="light-color">Avicii google doodle - 1st year IMD</a>
         <a href="https://yorickdv.blob.core.windows.net/portfolio-public/videos/shampoo.mp4" class="light-color">Animated shampoo logo - 2nd year IMD</a>
         <a href="projects/2IMD/deathproof/death-proof.html" class="light-color">Animated deathproof poster in css and html! - 2nd year IMD</a>
         <a href="projects/2IMD/night/index.html" class="light-color">Night animated logo - 2nd year IMD</a>
         <a href="projects/2IMD/zengarden/index.html" class="light-color">CSS Zengarden (theme: dance) - 2nd year IMD</a>
+    </section>
+    <section class="contactsection dark-background lightest-color" id="Contact">
+        <p class="lightest-color normaltitle">Contact</p>
+        <a href="https://www.zwabber.be" class="lightest-color">yorick.devleeschouwer@gmail.com</a>
+        <a href="https://www.zwabber.be" class="lightest-color">+32 475 71 61 86</a>
     </section>
 </body>
 <script>
@@ -152,6 +160,9 @@
 
 
 
+        }
+        else{
+            console.log("no http");
         }
     }
 
