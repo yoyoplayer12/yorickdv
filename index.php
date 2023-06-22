@@ -115,7 +115,7 @@
         <p class="lightest-color normaltitle">Design</p>
         <a href="projects/1IMD/doodle/index.html" class="lightest-color">Avicii google doodle - 1st year IMD</a>
         <a href="https://yorickdv.blob.core.windows.net/portfolio-public/videos/shampoo.mp4" class="lightest-color">Animated shampoo logo - 2nd year IMD</a>
-        <a href="projects/2IMD/deathproof/death-proof.html" class="lightest-color">Animated deathproof poster in css and html! - 2nd year IMD</a>
+        <a href="projects/2IMD/deathproof/death-proof.html" class="lightest-color">Animated deathproof poster in css and html - 2nd year IMD</a>
         <a href="projects/2IMD/night/index.html" class="lightest-color">Night animated logo - 2nd year IMD</a>
         <a href="projects/2IMD/zengarden/index.html" class="lightest-color">CSS Zengarden (theme: dance) - 2nd year IMD</a>
     </section>
