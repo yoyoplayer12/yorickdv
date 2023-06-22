@@ -1,35 +1,35 @@
 <?php
     require_once __DIR__ . '/bootstrap.php';
-    
+
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
-      
-        // Set the HTTPS status in the session
-        $_SESSION['isHTTPS'] = $isHTTPS;
-      
-        // Return the HTTPS status as the response
-        echo $isHTTPS ? "true" : "false";
-        exit();
+      $isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
+    
+      // Set the HTTPS status in the session
+      $_SESSION['isHTTPS'] = $isHTTPS;
+    
+      // Return the HTTPS status as the response
+      echo $isHTTPS ? "true" : "false";
+      exit();
+    }
+    
+    // Check if the HTTPS status has been set in the session
+    if (isset($_SESSION['isHTTPS'])) {
+      $isHTTPS = $_SESSION['isHTTPS'];
+    
+      if ($isHTTPS) {
+        // Show content for HTTPS
+        $httpsStatus = "This is an HTTPS page.";
       } else {
-        // Check if the HTTPS status has been set in the session
-        if (isset($_SESSION['isHTTPS'])) {
-          $isHTTPS = $_SESSION['isHTTPS'];
-      
-          if ($isHTTPS) {
-            // Show content for HTTPS
-            $httpsStatus = "This is an HTTPS page.";
-          } else {
-            // Show content for non-HTTPS
-            $httpsStatus = "This is not an HTTPS page.";
-          }
-        } else {
-          // HTTPS status not available, handle accordingly
-          $httpsStatus = "Unable to determine HTTPS status.";
-        }
-      
-        // Access the $httpsStatus variable in your PHP code
-        echo $httpsStatus;
+        // Show content for non-HTTPS
+        $httpsStatus = "This is not an HTTPS page.";
       }
+    } else {
+      // HTTPS status not available, handle accordingly
+      $httpsStatus = "Unable to determine HTTPS status.";
+    }
+    
+    // Access the $httpsStatus variable in your PHP code
+    echo $httpsStatus;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +39,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Yorick Devleeschouwer</title>
 </head>
 <body class="lightest-background">
