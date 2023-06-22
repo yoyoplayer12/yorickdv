@@ -121,8 +121,8 @@
     </section>
     <section class="contactsection dark-background lightest-color" id="Contact">
         <p class="lightest-color normaltitle">Contact</p>
-        <a href="https://www.zwabber.be" class="lightest-color">yorick.devleeschouwer@gmail.com</a>
-        <a href="https://www.zwabber.be" class="lightest-color">+32 475 71 61 86</a>
+        <a href="mailto:yorick.devleeschouwer@gmail.com" class="lightest-color">yorick.devleeschouwer@gmail.com</a>
+        <a href="tel:+32 475 71 61 86" class="lightest-color">+32 475 71 61 86</a>
     </section>
 </body>
 <script>
