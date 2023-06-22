@@ -37,6 +37,7 @@ body{
     font-family: montserrat-regular;
     font-weight: 400;
     background-color: var(--offwhite);
+    color: black;
 }
 .httpstext{
     grid-column: 1 / 6;
