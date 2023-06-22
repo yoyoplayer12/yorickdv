@@ -39,6 +39,9 @@ body{
     background-color: var(--offwhite);
     color: black;
 }
+a{
+    color: black;
+}
 .httpstext{
     grid-column: 1 / 6;
 }
