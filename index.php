@@ -2,34 +2,33 @@
     require_once __DIR__ . '/bootstrap.php';
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-      $isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
-    
-      // Set the HTTPS status in the session
-      $_SESSION['isHTTPS'] = $isHTTPS;
-    
-      // Return the HTTPS status as the response
-      echo $isHTTPS ? "true" : "false";
-      exit();
-    }
-    
-    // Check if the HTTPS status has been set in the session
-    if (isset($_SESSION['isHTTPS'])) {
-      $isHTTPS = $_SESSION['isHTTPS'];
-    
-      if ($isHTTPS) {
-        // Show content for HTTPS
-        $httpsStatus = "This is an HTTPS page.";
-      } else {
-        // Show content for non-HTTPS
-        $httpsStatus = "This is not an HTTPS page.";
+        $isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
+      
+        // Set the HTTPS status in the session
+        $_SESSION['isHTTPS'] = $isHTTPS;
+      
+        // Return the HTTPS status as the response
+        echo $isHTTPS ? "true" : "false";
+        exit();
       }
-    } else {
-      // HTTPS status not available, handle accordingly
-      $httpsStatus = "Unable to determine HTTPS status.";
-    }
-    
-    // Access the $httpsStatus variable in your PHP code
-    echo $httpsStatus;
+      
+      // Check if the HTTPS status has been set in the session
+      if (isset($_SESSION['isHTTPS'])) {
+        $isHTTPS = $_SESSION['isHTTPS'];
+      
+        if ($isHTTPS) {
+          // Show content for HTTPS
+          $httpsStatus = "This is an HTTPS page.";
+        } else {
+          // Show content for non-HTTPS
+          $httpsStatus = "This is not an HTTPS page.";
+        }
+      } else {
+        // HTTPS status not available, handle accordingly
+        $httpsStatus = "Unable to determine HTTPS status.";
+      }
+      var_dump($httpsStatus);
+        var_dump($_SESSION['isHTTPS']);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -40,6 +39,29 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>    
+    
+        // Send an AJAX request to the current page URL
+        $.ajax({
+        type: 'POST',
+        url: window.location.href,
+        data: { isHTTPS: window.location.protocol === "https:" },
+        success: function(response) {
+            console.log(response);
+            // Handle the response here (e.g., show content based on HTTPS status)
+            if (response === "true") {
+            // Show content for HTTPS
+            $('#content').text("This is an HTTPS page.");
+            } else {
+            // Show content for non-HTTPS
+            $('#content').text("This is not an HTTPS page.");
+            }
+        },
+        error: function(xhr, status, error) {
+            console.log(error);
+        }
+        });
+</script>
     <title>Yorick Devleeschouwer</title>
 </head>
 <body class="lightest-background">
@@ -153,28 +175,6 @@
             element[i].style.color = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
         }
     }
-
-
-    // Send an AJAX request to the current page URL
-    $.ajax({
-      type: 'POST',
-      url: window.location.href,
-      data: { isHTTPS: window.location.protocol === "https:" },
-      success: function(response) {
-        console.log(response);
-        // Handle the response here (e.g., show content based on HTTPS status)
-        if (response === "true") {
-          // Show content for HTTPS
-          $('#content').text("This is an HTTPS page.");
-        } else {
-          // Show content for non-HTTPS
-          $('#content').text("This is not an HTTPS page.");
-        }
-      },
-      error: function(xhr, status, error) {
-        console.log(error);
-      }
-    });
 </script>
 
 </html>
