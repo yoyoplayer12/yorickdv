@@ -104,7 +104,7 @@
        <p class="lightest-color normaltitle">Develop</p>
         <a href="projects/1IMD/BeachPuppies/game.html" class="lightest-color">Beach Puppies (game) - 1st year XD</a>
         <a href="projects/1IMD/clubdefender/portrait.html" class="lightest-color">Cub Defender (game) - 1st year XD</a>
-        <a href="https://copoll.live" class="lightest-color">Copoll</a>
+        <a href="https://copoll.live" class="lightest-color">Copoll - 2nd year XD</a>
         <!-- <a href="projects/2IMD/vrballoons/vr/dist/index.html">vr game - 2nd year XD</a> thisones broken because azure cors problem -->
     </section>
     <section class="djsection dark-background lightest-color" id="dj">
