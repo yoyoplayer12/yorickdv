@@ -102,10 +102,10 @@
     </section>
     <section class="developsection lightdark-background lightest-color" id="develop">
        <p class="lightest-color normaltitle">Develop</p>
-        <a href="projects/1IMD/BeachPuppies/game.html" class="lightest-color">Beach Puppies (game) - 1st year IMD</a>
-        <a href="projects/1IMD/clubdefender/portrait.html" class="lightest-color">Cub Defender (game) - 1st year IMD</a>
+        <a href="projects/1IMD/BeachPuppies/game.html" class="lightest-color">Beach Puppies (game) - 1st year XD</a>
+        <a href="projects/1IMD/clubdefender/portrait.html" class="lightest-color">Cub Defender (game) - 1st year XD</a>
         <a href="https://copoll.live" class="lightest-color">Copoll</a>
-        <!-- <a href="projects/2IMD/vrballoons/vr/dist/index.html">vr game - 2nd year IMD</a> thisones fucked because azure cors problem -->
+        <!-- <a href="projects/2IMD/vrballoons/vr/dist/index.html">vr game - 2nd year XD</a> thisones broken because azure cors problem -->
     </section>
     <section class="djsection dark-background lightest-color" id="dj">
         <p class="lightest-color normaltitle">DJ</p>
@@ -113,11 +113,11 @@
     </section>
     <section class="designsection lightdark-background lightest-color" id="design">
         <p class="lightest-color normaltitle">Design</p>
-        <a href="projects/1IMD/doodle/index.html" class="lightest-color">Avicii google doodle - 1st year IMD</a>
-        <a href="https://yorickdv.blob.core.windows.net/portfolio-public/videos/shampoo.mp4" class="lightest-color">Animated shampoo logo - 2nd year IMD</a>
-        <a href="projects/2IMD/deathproof/death-proof.html" class="lightest-color">Animated deathproof poster in css and html - 2nd year IMD</a>
-        <a href="projects/2IMD/night/index.html" class="lightest-color">Night animated logo - 2nd year IMD</a>
-        <a href="projects/2IMD/zengarden/index.html" class="lightest-color">CSS Zengarden (theme: dance) - 2nd year IMD</a>
+        <a href="projects/1IMD/doodle/index.html" class="lightest-color">Avicii google doodle - 1st year XD</a>
+        <a href="https://yorickdv.blob.core.windows.net/portfolio-public/videos/shampoo.mp4" class="lightest-color">Animated shampoo logo - 2nd year XD</a>
+        <a href="projects/2IMD/deathproof/death-proof.html" class="lightest-color">Animated deathproof poster in css and html - 2nd year XD</a>
+        <a href="projects/2IMD/night/index.html" class="lightest-color">Night animated logo - 2nd year XD</a>
+        <a href="projects/2IMD/zengarden/index.html" class="lightest-color">CSS Zengarden (theme: dance) - 2nd year XD</a>
     </section>
     <section class="contactsection dark-background lightest-color" id="Contact">
         <p class="lightest-color normaltitle">Contact</p>
