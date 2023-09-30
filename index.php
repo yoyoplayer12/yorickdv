@@ -123,6 +123,11 @@
         <p class="lightest-color normaltitle">Contact</p>
         <a href="mailto:yorick.devleeschouwer@gmail.com" class="lightest-color">yorick.devleeschouwer@gmail.com</a>
         <a href="tel:+32 475 71 61 86" class="lightest-color">+32 475 71 61 86</a>
+        <div id="socials">
+            <a href="https://soundcloud.com/zwabbermusic" class="lightest-color">Soundcloud</a>
+            <a href="https://www.instagram.com/zwabber_dnb/" class="lightest-color">Instagram</a>
+            <a href="https://www.linkedin.com/in/yorickdv" class="lightest-color">LinkedIn</a>
+        </div>
     </section>
 </body>
 <script>
