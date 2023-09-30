@@ -3,7 +3,7 @@
 	--enemy-y: 0px;
 }
 .center {
-	background-image: url("https://yorickdv.blob.core.windows.net/portfolio-public/photos/clubdefender/Discotheek.png");
+	background-image: url("https://portfolionew.blob.core.windows.net/photos/clubdefender/Discotheek.png?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D");
 	background-repeat: no-repeat;
 }
 
@@ -115,7 +115,7 @@
 	width: 200px;
 	height: 200px;
 	margin-left: 150px;
-	background-image: url("https://yorickdv.blob.core.windows.net/portfolio-public/photos/clubdefender/Beers.png");
+	background-image: url("https://portfolionew.blob.core.windows.net/photos/clubdefender/Beers.png?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D");
 	animation: beeranimation 10s steps(59) infinite;
 }
 @keyframes textcolor {
@@ -167,7 +167,7 @@
 	left: 175px;
 	height: 101px;
 	top: 480px;
-	background-image: url("https://yorickdv.blob.core.windows.net/portfolio-public/photos/clubdefender/beerammo.png");
+	background-image: url("https://portfolionew.blob.core.windows.net/photos/clubdefender/beerammo.png?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D");
 	background-size: contain;
 }
 .lives{
@@ -185,7 +185,7 @@
 	position: absolute;
 	z-index: 2;
 	background-size: contain;
-	background-image: url("https://yorickdv.blob.core.windows.net/portfolio-public/photos/clubdefender/student.png");
+	background-image: url("https://portfolionew.blob.core.windows.net/photos/clubdefender/student.png?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D");
 	width: 61.5px;
 	height: 100px;
 	top: var(--enemy-y);
