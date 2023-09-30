@@ -58,7 +58,7 @@
         }
         });
 </script>
-    <title>Yorick Devleeschouwer</title>
+    <title>Yorrick Devleeschouwer</title>
 </head>
 <body class="lightest-background">
     <div class="centeredflex">
