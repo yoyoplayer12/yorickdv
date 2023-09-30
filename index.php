@@ -114,7 +114,7 @@
     <section class="designsection lightdark-background lightest-color" id="design">
         <p class="lightest-color normaltitle">Design</p>
         <a href="projects/1IMD/doodle/index.html" class="lightest-color">Avicii google doodle - 1st year XD</a>
-        <a href="https://yorickdv.blob.core.windows.net/portfolio-public/videos/shampoo.mp4" class="lightest-color">Animated shampoo logo - 2nd year XD</a>
+        <a href="https://portfolionew.blob.core.windows.net/video/shampoo.mp4?sp=r&st=2023-09-30T19:53:04Z&se=2027-08-03T03:53:04Z&sv=2022-11-02&sr=c&sig=b4BTmho%2FXbX6UNIkopLG5YWAoohui%2FhMWQr%2FFgEVEHE%3D" class="lightest-color">Animated shampoo logo - 2nd year XD</a>
         <a href="projects/2IMD/deathproof/death-proof.html" class="lightest-color">Animated deathproof poster in css and html - 2nd year XD</a>
         <a href="projects/2IMD/night/index.html" class="lightest-color">Night animated logo - 2nd year XD</a>
         <a href="projects/2IMD/zengarden/index.html" class="lightest-color">CSS Zengarden (theme: dance) - 2nd year XD</a>
