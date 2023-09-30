@@ -188,15 +188,15 @@ textureLoader.setCrossOrigin('anonymous');
 //TEXTURES_______________________________________________________________
 const textureLoader = new THREE.TextureLoader();
 //grass texture for the floor
-const stone = textureLoader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/stones.jpg');
+const stone = textureLoader.load('https://portfolionew.blob.core.windows.net/vrgame/balloongame/stones.jpg?sp=r&st=2023-09-30T20:11:38Z&se=2027-08-03T04:11:38Z&sv=2022-11-02&sr=c&sig=jeXAlSyfElqufvxLoBsjDTv0gaLXiTur45Ktyg6VtN4%3D');
 stone.repeat.set(1, 1);
 stone.wrapS = THREE.RepeatWrapping;
 //white-red texture for the missing face
-const whiteRedTexture = textureLoader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/white-red_texture.jpg');
+const whiteRedTexture = textureLoader.load('https://portfolionew.blob.core.windows.net/vrgame/balloongame/white-red_texture.jpg?sp=r&st=2023-09-30T20:11:38Z&se=2027-08-03T04:11:38Z&sv=2022-11-02&sr=c&sig=jeXAlSyfElqufvxLoBsjDTv0gaLXiTur45Ktyg6VtN4%3D');
 whiteRedTexture.repeat.set(3, 1);
 whiteRedTexture.wrapS = THREE.RepeatWrapping;
 //wood texture for the left and right wall
-const woodTexture = textureLoader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/wood_texture.jpg');
+const woodTexture = textureLoader.load('https://portfolionew.blob.core.windows.net/vrgame/balloongame/wood_texture.jpg?sp=r&st=2023-09-30T20:11:38Z&se=2027-08-03T04:11:38Z&sv=2022-11-02&sr=c&sig=jeXAlSyfElqufvxLoBsjDTv0gaLXiTur45Ktyg6VtN4%3D');
 woodTexture.repeat.set(1, 1);
 woodTexture.wrapS = THREE.RepeatWrapping;
 //______________________________________________________________________
@@ -228,7 +228,7 @@ scene.add(rightWall);
 function loadBalloonModel(x) {
 	const loader = new GLTFLoader();
 	loader.setCrossOrigin('anonymous'); // Ensure anonymous cross-origin request
-	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/balloon/balloon.gltf', function (gltf) {
+	loader.load('https://portfolionew.blob.core.windows.net/vrgame/balloongame/balloon/balloon.gltf?sp=r&st=2023-09-30T20:11:38Z&se=2027-08-03T04:11:38Z&sv=2022-11-02&sr=c&sig=jeXAlSyfElqufvxLoBsjDTv0gaLXiTur45Ktyg6VtN4%3D', function (gltf) {
 		const newBalloon = gltf.scene;
 		newBalloon.scale.set(0.005, 0.005, 0.005);
 		newBalloon.position.set(x, 0, -3.5); // Adjust the position as needed 
@@ -243,7 +243,7 @@ function loadBalloonModel(x) {
 function loadStand() {
 	const loader = new GLTFLoader();
 	loader.setCrossOrigin('anonymous'); // Ensure anonymous cross-origin request
-	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/stand/stand.gltf', function (gltf) {
+	loader.load('https://portfolionew.blob.core.windows.net/vrgame/balloongame/stand/stand.gltf?sp=r&st=2023-09-30T20:11:38Z&se=2027-08-03T04:11:38Z&sv=2022-11-02&sr=c&sig=jeXAlSyfElqufvxLoBsjDTv0gaLXiTur45Ktyg6VtN4%3D', function (gltf) {
 		const newStand = gltf.scene;
 		newStand.scale.set(0.4, 0.4, 0.4);
 		newStand.position.set(0, 0, 0); // Adjust the position as needed 
@@ -301,7 +301,7 @@ function loadDartModel(color) {
 	return new Promise((resolve, reject) => {
 		const loader = new GLTFLoader();
 		loader.setCrossOrigin('anonymous'); // Ensure anonymous cross-origin request
-		loader.load(`https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/darts/${color}/scene.gltf`, function (gltf) {
+		loader.load(`https://portfolionew.blob.core.windows.net/vrgame/balloongame/darts/${color}/scene.gltf?sp=r&st=2023-09-30T20:11:38Z&se=2027-08-03T04:11:38Z&sv=2022-11-02&sr=c&sig=jeXAlSyfElqufvxLoBsjDTv0gaLXiTur45Ktyg6VtN4%3D`, function (gltf) {
 			const dart = gltf.scene;
 
 			dart.scale.set(0.01, 0.01, 0.01);
@@ -366,7 +366,7 @@ function handleController(controller) {
 function loadCroissant(y, x, r) {
 	const loader = new GLTFLoader();
 	loader.setCrossOrigin('anonymous'); // Ensure anonymous cross-origin request
-	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/croissant/scene.gltf', function (gltf) {
+	loader.load('https://portfolionew.blob.core.windows.net/vrgame/balloongame/croissant/scene.gltf?sp=r&st=2023-09-30T20:11:38Z&se=2027-08-03T04:11:38Z&sv=2022-11-02&sr=c&sig=jeXAlSyfElqufvxLoBsjDTv0gaLXiTur45Ktyg6VtN4%3D', function (gltf) {
 		const newCroissant = gltf.scene;
 		newCroissant.scale.set(1, 1, 1);
 		newCroissant.position.set(y, 0.4, x); // Adjust the position as needed 
@@ -380,7 +380,7 @@ function loadCroissant(y, x, r) {
 }
 function loadBarrel(y, x, h, r, rx) {
 	const loader = new GLTFLoader();
-	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/barrel/scene.gltf', function (gltf) {
+	loader.load('https://portfolionew.blob.core.windows.net/vrgame/balloongame/barrel/scene.gltf?sp=r&st=2023-09-30T20:11:38Z&se=2027-08-03T04:11:38Z&sv=2022-11-02&sr=c&sig=jeXAlSyfElqufvxLoBsjDTv0gaLXiTur45Ktyg6VtN4%3D', function (gltf) {
 		const newBarrel = gltf.scene;
 		newBarrel.scale.set(1, 1, 1);
 		newBarrel.position.set(y, h, x); // Adjust the position as needed 
@@ -397,7 +397,7 @@ function loadBarrel(y, x, h, r, rx) {
 function loadDartboard(y, x, h, r) {
 	const loader = new GLTFLoader();
 	loader.setCrossOrigin('anonymous'); // Ensure anonymous cross-origin request
-	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/dartboard/dartboard_1k.gltf', function (gltf) {
+	loader.load('https://portfolionew.blob.core.windows.net/vrgame/balloongame/dartboard/dartboard_1k.gltf?sp=r&st=2023-09-30T20:11:38Z&se=2027-08-03T04:11:38Z&sv=2022-11-02&sr=c&sig=jeXAlSyfElqufvxLoBsjDTv0gaLXiTur45Ktyg6VtN4%3D', function (gltf) {
 		const newBoard = gltf.scene;
 		newBoard.scale.set(1, 1, 1);
 		newBoard.position.set(y, h, x); // Adjust the position as needed 
@@ -412,7 +412,7 @@ function loadDartboard(y, x, h, r) {
 function loadYoda(y, x, h, r) {
 	const loader = new GLTFLoader();
 	loader.setCrossOrigin('anonymous'); // Ensure anonymous cross-origin request
-	loader.load('https://yorickdv.blob.core.windows.net/portfolio-public/vr/balloongame/yoda/scene.gltf', function (gltf) {
+	loader.load('https://portfolionew.blob.core.windows.net/vrgame/balloongame/yoda/scene.gltf?sp=r&st=2023-09-30T20:11:38Z&se=2027-08-03T04:11:38Z&sv=2022-11-02&sr=c&sig=jeXAlSyfElqufvxLoBsjDTv0gaLXiTur45Ktyg6VtN4%3D', function (gltf) {
 		const newYoda = gltf.scene;
 		newYoda.scale.set(0.015, 0.015, 0.015);
 		newYoda.position.set(y, h, x); // Adjust the position as needed 
