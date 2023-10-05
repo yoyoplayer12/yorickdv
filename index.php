@@ -39,7 +39,7 @@
     <meta property="og:secure_url" content="https://yorickdv.be" />
     <meta property="og:url" content="http://yorickdv.be" />
     <meta property="og:title" content="Yorick Devleeschouwer | Portfolio" />
-    <meta property="og:description" content="Here you can fine some things i've been working on..." />
+    <meta property="og:description" content="Here you can explore some things i've been working on..." />
     <meta property="og:image" content="https://portfolionew.blob.core.windows.net/photos/main/graphs.jpg?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D" />
     <meta property="og:site_name" content="yorickdv" />
 
