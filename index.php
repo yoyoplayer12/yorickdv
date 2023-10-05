@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- open graphs -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yorickdv.be" />
+    <meta property="og:secure_url" content="https://yorickdv.be" />
     <meta property="og:url" content="http://yorickdv.be" />
     <meta property="og:title" content="Yorick Devleeschouwer | Portfolio" />
     <meta property="og:description" content="Here you can fine some things i've been working on..." />
