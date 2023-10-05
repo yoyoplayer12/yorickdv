@@ -34,6 +34,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <!-- open graphs -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yorickdv.be" />
+    <meta property="og:url" content="http://yorickdv.be" />
+    <meta property="og:title" content="Yorick Devleeschouwer | Portfolio" />
+    <meta property="og:description" content="Here you can fine some things i've been working on..." />
+    <meta property="og:image" content="your-image-url.png" />
+    <meta property="og:site_name" content="yorickdv" />
+
+    <!-- twitter -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>    
     
