@@ -168,7 +168,7 @@
 	height: 101px;
 	top: 480px;
 	background-image: url("https://portfolionew.blob.core.windows.net/photos/clubdefender/player.png?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D");
-	background-size: contain;
+	background-size: cover;
 }
 .lives{
 	position: absolute;
