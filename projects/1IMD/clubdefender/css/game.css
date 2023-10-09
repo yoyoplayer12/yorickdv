@@ -163,7 +163,7 @@
 .player{
 	position: absolute;
 	z-index: 3;
-	width: 65px;
+	width: 101px;
 	left: 175px;
 	height: 101px;
 	top: 480px;
