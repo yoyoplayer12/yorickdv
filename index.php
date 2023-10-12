@@ -1,34 +1,53 @@
 <?php
-    require_once __DIR__ . '/bootstrap.php';
+require_once __DIR__ . '/bootstrap.php';
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
-      
-        // Set the HTTPS status in the session
-        $_SESSION['isHTTPS'] = $isHTTPS;
-      
-        // Return the HTTPS status as the response
-        echo $isHTTPS ? "true" : "false";
-        exit();
-      }
-      // Check if the HTTPS status has been set in the session
-      if (isset($_SESSION['isHTTPS'])) {
-        $isHTTPS = $_SESSION['isHTTPS'];
-        if ($isHTTPS) {
-          // Show content for HTTPS
-          $httpsStatus = "This is an HTTPS page.";
-        } else {
-          // Show content for non-HTTPS
-          $httpsStatus = "This is not an HTTPS page.";
-        }
-      } else {
-        // HTTPS status not available, handle accordingly
-        $httpsStatus = "Unable to determine HTTPS status.";
-      }
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
+
+    // Set the HTTPS status in the session
+    $_SESSION['isHTTPS'] = $isHTTPS;
+
+    // Return the HTTPS status as the response
+    echo $isHTTPS ? "true" : "false";
+    exit();
+}
+// Check if the HTTPS status has been set in the session
+if (isset($_SESSION['isHTTPS'])) {
+    $isHTTPS = $_SESSION['isHTTPS'];
+    if ($isHTTPS) {
+        // Show content for HTTPS
+        $httpsStatus = "This is an HTTPS page.";
+    } else {
+        // Show content for non-HTTPS
+        $httpsStatus = "This is not an HTTPS page.";
+    }
+} else {
+    // HTTPS status not available, handle accordingly
+    $httpsStatus = "Unable to determine HTTPS status.";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WHDRZWXG');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,53 +62,59 @@
     <meta property="og:description" content="Here you can explore some things i've been working on..." />
     <meta property="og:image" content="https://portfolionew.blob.core.windows.net/photos/main/graphs.jpg?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D" />
     <meta property="og:site_name" content="yorickdv" />
-
     <!-- twitter -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>    
-    
+    <script>
         // Send an AJAX request to the current page URL
         $.ajax({
-        type: 'POST',
-        url: window.location.href,
-        data: { isHTTPS: window.location.protocol === "https:" },
-        success: function(response) {
-            console.log(response);
-            // Handle the response here (e.g., show content based on HTTPS status)
-            if (response === "true") {
-            // Show content for HTTPS
-            $('#content').text("This is an HTTPS page.");
-            } else {
-            // Show content for non-HTTPS
-            $('#content').text("This is not an HTTPS page.");
+            type: 'POST',
+            url: window.location.href,
+            data: {
+                isHTTPS: window.location.protocol === "https:"
+            },
+            success: function(response) {
+                console.log(response);
+                // Handle the response here (e.g., show content based on HTTPS status)
+                if (response === "true") {
+                    // Show content for HTTPS
+                    $('#content').text("This is an HTTPS page.");
+                } else {
+                    // Show content for non-HTTPS
+                    $('#content').text("This is not an HTTPS page.");
+                }
+            },
+            error: function(xhr, status, error) {
+                console.log(error);
             }
-        },
-        error: function(xhr, status, error) {
-            console.log(error);
-        }
         });
-</script>
+    </script>
+
+
     <title>Yorick Devleeschouwer</title>
 </head>
+
 <body class="lightest-background">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHDRZWXG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div class="centeredflex">
         <div class="colorblocks">
-            <?php if($isHTTPS): ?>
+            <?php if ($isHTTPS) : ?>
                 <div class="httpstext">
                     <p class="toptext" style="background-color: black;color:white;">Can't see any colors here?</p>
                     <p class="bottext" style="background-color: black;color:white;">Try reloading the page as http to get your random color palette!</p>
                 </div>
-            <?php else: ?>
+            <?php else : ?>
                 <div class="colorblock lightest-background"></div>
                 <div class="colorblock light-background"></div>
                 <div class="colorblock maincolor-background"></div>
                 <div class="colorblock lightdark-background"></div>
                 <div class="colorblock dark-background"></div>
 
-                
-                
-                
-                
+
+
+
+
                 <p class="dark-color" id="lightest"></p>
                 <p class="dark-color" id="light"></p>
                 <p class="dark-color" id="maincolor"></p>
@@ -98,8 +123,8 @@
             <?php endif; ?>
         </div>
     </div>
-    <?php if(!$isHTTPS): ?>
-        <p class="httpexplanation"  style="background-color: black;color:white;">Don't like these colors? Try reloading the page.</p>
+    <?php if (!$isHTTPS) : ?>
+        <p class="httpexplanation" style="background-color: black;color:white;">Don't like these colors? Try reloading the page.</p>
     <?php endif; ?>
     <header class="centered-fp lightest-background">
         <a href="#firstinfo" class="dark-color fptitle">Yorick Devleeschouwer</a>
@@ -112,7 +137,7 @@
         </div>
     </section>
     <section class="developsection lightdark-background lightest-color" id="develop">
-       <p class="lightest-color normaltitle">Develop</p>
+        <p class="lightest-color normaltitle">Develop</p>
         <a href="projects/1IMD/BeachPuppies/game.html" class="lightest-color">Beach Puppies (game) - 1st year XD</a>
         <a href="projects/1IMD/clubdefender/portrait.html" class="lightest-color">Cub Defender (game) - 1st year XD</a>
         <a href="https://copoll.live" class="lightest-color">Copoll - 2nd year XD</a>
@@ -144,13 +169,13 @@
 <script>
     var url = "http://colormind.io/api/";
     var data = {
-        model : "default"
+        model: "default"
     }
 
     var http = new XMLHttpRequest();
 
     http.onreadystatechange = function() {
-        if(http.readyState == 4 && http.status == 200) {
+        if (http.readyState == 4 && http.status == 200) {
             var palette = JSON.parse(http.responseText).result;
             var dark = palette[0];
             var lightdark = palette[1];
@@ -181,12 +206,14 @@
 
     http.open("POST", url, true);
     http.send(JSON.stringify(data));
+
     function assignBackgroundColorToElement(elementclass, color) {
         var element = document.querySelectorAll(elementclass);
         for (var i = 0; i < element.length; i++) {
             element[i].style.backgroundColor = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
         }
     }
+
     function assignColorToElement(elementclass, color) {
         var element = document.querySelectorAll(elementclass);
         for (var i = 0; i < element.length; i++) {
@@ -194,4 +221,5 @@
         }
     }
 </script>
+
 </html>
