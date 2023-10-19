@@ -148,18 +148,18 @@ if (isset($_SESSION['isHTTPS'])) {
         </div>
     </section>
     <section class="developsection lightdark-background lightest-color" id="develop">
-        <h2 class="lightest-color normaltitle">I'm a Developer</h2>
+        <h2 class="lightest-color normaltitle">I Develop</h2>
         <a href="projects/1IMD/BeachPuppies/game.html" class="lightest-color">Beach Puppies (game) - 1st year XD</a>
         <a href="projects/1IMD/clubdefender/portrait.html" class="lightest-color">Cub Defender (game) - 1st year XD</a>
         <a href="https://copoll.live" class="lightest-color">Copoll - 2nd year XD</a>
         <!-- <a href="projects/2IMD/vrballoons/vr/dist/index.html">vr game - 2nd year XD</a> thisones broken because azure cors problem -->
     </section>
     <section class="djsection dark-background lightest-color" id="dj">
-        <p class="lightest-color normaltitle">I'm a DJ</p>
+        <p class="lightest-color normaltitle">I DJ</p>
         <a href="https://www.zwabber.be" class="lightest-color">Go to zwabber.be</a>
     </section>
     <section class="designsection lightdark-background lightest-color" id="design">
-        <h2 class="lightest-color normaltitle">I'm a Designer</h2>
+        <h2 class="lightest-color normaltitle">I Designer</h2>
         <a href="projects/1IMD/doodle/index.html" class="lightest-color">Avicii google doodle - 1st year XD</a>
         <a href="https://portfolionew.blob.core.windows.net/video/shampoo.mp4?sp=r&st=2023-09-30T19:53:04Z&se=2027-08-03T03:53:04Z&sv=2022-11-02&sr=c&sig=b4BTmho%2FXbX6UNIkopLG5YWAoohui%2FhMWQr%2FFgEVEHE%3D" class="lightest-color">Animated shampoo logo - 2nd year XD</a>
         <a href="projects/2IMD/deathproof/death-proof.html" class="lightest-color">Animated deathproof poster in css and html - 2nd year XD</a>
