@@ -1,4 +1,8 @@
 <?php
+//set session cache to 30 minutes
+session_cache_expire(30);
+$cache_expire = session_cache_expire();
+
 require_once __DIR__ . '/bootstrap.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -126,11 +130,6 @@ if (isset($_SESSION['isHTTPS'])) {
                 <div class="colorblock maincolor-background"></div>
                 <div class="colorblock lightdark-background"></div>
                 <div class="colorblock dark-background"></div>
-
-
-
-
-
                 <p class="dark-color" id="lightest"></p>
                 <p class="dark-color" id="light"></p>
                 <p class="dark-color" id="maincolor"></p>
