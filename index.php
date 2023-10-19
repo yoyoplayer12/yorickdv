@@ -148,7 +148,7 @@ if (isset($_SESSION['isHTTPS'])) {
         </div>
     </section>
     <section class="developsection lightdark-background lightest-color" id="develop">
-        <p class="lightest-color normaltitle">Develop</p>
+        <h2 class="lightest-color normaltitle">Develop</h2>
         <a href="projects/1IMD/BeachPuppies/game.html" class="lightest-color">Beach Puppies (game) - 1st year XD</a>
         <a href="projects/1IMD/clubdefender/portrait.html" class="lightest-color">Cub Defender (game) - 1st year XD</a>
         <a href="https://copoll.live" class="lightest-color">Copoll - 2nd year XD</a>
@@ -159,7 +159,7 @@ if (isset($_SESSION['isHTTPS'])) {
         <a href="https://www.zwabber.be" class="lightest-color">Go to zwabber.be</a>
     </section>
     <section class="designsection lightdark-background lightest-color" id="design">
-        <p class="lightest-color normaltitle">Design</p>
+        <h2 class="lightest-color normaltitle">Design</h2>
         <a href="projects/1IMD/doodle/index.html" class="lightest-color">Avicii google doodle - 1st year XD</a>
         <a href="https://portfolionew.blob.core.windows.net/video/shampoo.mp4?sp=r&st=2023-09-30T19:53:04Z&se=2027-08-03T03:53:04Z&sv=2022-11-02&sr=c&sig=b4BTmho%2FXbX6UNIkopLG5YWAoohui%2FhMWQr%2FFgEVEHE%3D" class="lightest-color">Animated shampoo logo - 2nd year XD</a>
         <a href="projects/2IMD/deathproof/death-proof.html" class="lightest-color">Animated deathproof poster in css and html - 2nd year XD</a>
@@ -167,7 +167,7 @@ if (isset($_SESSION['isHTTPS'])) {
         <a href="projects/2IMD/zengarden/index.html" class="lightest-color">CSS Zengarden (theme: dance) - 2nd year XD</a>
     </section>
     <section class="contactsection dark-background lightest-color" id="Contact">
-        <p class="lightest-color normaltitle"><a href="https://us9.list-manage.com/contact-form?u=73ce4ec6685f7d62b4ee57336&form_id=793ed7f20041658033ccecd40efcd7a7">Contact</a></p>
+        <h2 class="lightest-color normaltitle"><a href="https://us9.list-manage.com/contact-form?u=73ce4ec6685f7d62b4ee57336&form_id=793ed7f20041658033ccecd40efcd7a7">Contact</a></h2>
         <a href="mailto:yorick.devleeschouwer@gmail.com" class="lightest-color">yorick.devleeschouwer@gmail.com</a>
         <a href="tel:+32 475 71 61 86" class="lightest-color">+32 475 71 61 86</a>
         <div id="socials">
