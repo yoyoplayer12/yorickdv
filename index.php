@@ -30,24 +30,16 @@ if (isset($_SESSION['isHTTPS'])) {
 <html lang="en">
 
 <head>
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KMF849CF');
-    </script>
-    <!-- End Google Tag Manager -->
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KRQD287WDE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KRQD287WDE');
+</script>
+<!-- end google tag -->
     <!-- mailchimp -->
     <script id="mcjs">
         ! function(c, h, i, m, p) {
@@ -66,7 +58,7 @@ if (isset($_SESSION['isHTTPS'])) {
     <meta property="og:type" content="website" />
     <meta property="og:secure_url" content="https://yorickdv.be" />
     <meta property="og:url" content="http://yorickdv.be" />
-    <meta property="og:title" content="Yorick Devleeschouwer | Portfolio" />
+    <meta property="og:title" content="Yorick Devleeschouwer | Develop DJ Design" />
     <meta property="og:description" content="I'm Yorick Devleeschouwer, and I am a Developer, DJ and Designer. Currently in my last year at Thomas More Mechelen, Studying Digital Experience Design." />
     <meta property="og:image" content="https://portfolionew.blob.core.windows.net/photos/main/graphs.jpg?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D" />
     <meta property="og:site_name" content="yorickdv" />
@@ -74,7 +66,7 @@ if (isset($_SESSION['isHTTPS'])) {
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:site" content="yorickdv.be" />
-    <meta property="twitter:title" content="Yorick Devleeschouwer | Portfolio" />
+    <meta property="twitter:title" content="Yorick Devleeschouwer | Develop DJ Design" />
     <meta property="twitter:description" content="I'm Yorick Devleeschouwer, and I am a Developer, DJ and Designer. Currently in my last year at Thomas More Mechelen, Studying Digital Experience Design." />
     <meta property="twitter:image" content="https://portfolionew.blob.core.windows.net/photos/main/graphs.jpg?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D" />
 
@@ -110,9 +102,6 @@ if (isset($_SESSION['isHTTPS'])) {
 </head>
 
 <body class="lightest-background">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMF849CF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
     <div class="centeredflex">
         <div class="colorblocks">
             <?php if ($isHTTPS) : ?>
