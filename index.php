@@ -111,10 +111,10 @@ if (isset($_SESSION['isHTTPS'])) {
 
 <body class="lightest-background">
     <!-- Google Tag Manager (noscript) -->
-    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMF849CF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMF849CF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRQD287WDE"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRQD287WDE"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -124,7 +124,7 @@ if (isset($_SESSION['isHTTPS'])) {
         gtag('js', new Date());
 
         gtag('config', 'G-KRQD287WDE');
-    </script>
+    </script> -->
     <!-- google tag end -->
     <div class="centeredflex">
         <div class="colorblocks">
