@@ -45,8 +45,9 @@ if (isset($_SESSION['isHTTPS'])) {
             j.src =
                 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
             f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-WHDRZWXG');
+        })(window, document, 'script', 'dataLayer', 'GTM-KMF849CF');
     </script>
+    <!-- End Google Tag Manager -->
     <!-- mailchimp -->
     <script id="mcjs">
         ! function(c, h, i, m, p) {
@@ -54,7 +55,7 @@ if (isset($_SESSION['isHTTPS'])) {
         }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/73ce4ec6685f7d62b4ee57336/ee7c52e7988ddb10b5dfa36b2.js");
     </script>
     <!-- end mailchimp -->
-    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -110,7 +111,7 @@ if (isset($_SESSION['isHTTPS'])) {
 
 <body class="lightest-background">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WHDRZWXG" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMF849CF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <div class="centeredflex">
         <div class="colorblocks">
