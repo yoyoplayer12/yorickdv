@@ -54,9 +54,11 @@ if (isset($_SESSION['isHTTPS'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="Yoricks Portfolio">
     <meta name="description" content="I'm Yorick Devleeschouwer, and I am a Developer, DJ and Designer. Currently in my last year at Thomas More Mechelen, Studying Digital Experience Design.">
     <meta name="keywords" content="Developer, Develop, Designer, Design, DJ, Yorick, Yorickdv, Zwabber, DJ Zwabber">
     <meta name="author" content="Yorick Devleeschouwer">
+
     <link rel="icon" href="https://portfolionew.blob.core.windows.net/photos/main/icon.png?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
