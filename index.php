@@ -62,7 +62,18 @@ if (isset($_SESSION['isHTTPS'])) {
     <meta property="og:description" content="Here you can explore some things i've been working on..." />
     <meta property="og:image" content="https://portfolionew.blob.core.windows.net/photos/main/graphs.jpg?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D" />
     <meta property="og:site_name" content="yorickdv" />
-    <!-- twitter -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="yorickdv.be" />
+    <meta property="twitter:title" content="Yorick Devleeschouwer | Portfolio" />
+    <meta property="twitter:description" content="Here you can explore some things i've been working on..." />
+    <meta property="twitter:image" content="https://portfolionew.blob.core.windows.net/photos/main/graphs.jpg?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D" />
+
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         // Send an AJAX request to the current page URL
