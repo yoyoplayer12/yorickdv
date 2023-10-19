@@ -1,4 +1,8 @@
 <?php
+//set session cache to 30 minutes
+session_cache_expire(30);
+$cache_expire = session_cache_expire();
+
 require_once __DIR__ . '/bootstrap.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
