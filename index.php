@@ -67,7 +67,7 @@ if (isset($_SESSION['isHTTPS'])) {
     <meta property="og:secure_url" content="https://yorickdv.be" />
     <meta property="og:url" content="http://yorickdv.be" />
     <meta property="og:title" content="Yorick Devleeschouwer | Portfolio" />
-    <meta property="og:description" content="Here you can explore some things i've been working on..." />
+    <meta property="og:description" content="I'm Yorick Devleeschouwer, and I am a Developer, DJ and Designer. Currently in my last year at Thomas More Mechelen, Studying Digital Experience Design." />
     <meta property="og:image" content="https://portfolionew.blob.core.windows.net/photos/main/graphs.jpg?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D" />
     <meta property="og:site_name" content="yorickdv" />
 
@@ -75,7 +75,7 @@ if (isset($_SESSION['isHTTPS'])) {
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:site" content="yorickdv.be" />
     <meta property="twitter:title" content="Yorick Devleeschouwer | Portfolio" />
-    <meta property="twitter:description" content="Here you can explore some things i've been working on..." />
+    <meta property="twitter:description" content="I'm Yorick Devleeschouwer, and I am a Developer, DJ and Designer. Currently in my last year at Thomas More Mechelen, Studying Digital Experience Design." />
     <meta property="twitter:image" content="https://portfolionew.blob.core.windows.net/photos/main/graphs.jpg?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D" />
 
 
@@ -106,7 +106,7 @@ if (isset($_SESSION['isHTTPS'])) {
     </script>
 
 
-    <title>Yorick Devleeschouwer</title>
+    <title>Yorick Devleeschouwer | Developer DJ Designer</title>
 </head>
 
 <body class="lightest-background">
