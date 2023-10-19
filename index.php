@@ -126,11 +126,6 @@ if (isset($_SESSION['isHTTPS'])) {
                 <div class="colorblock maincolor-background"></div>
                 <div class="colorblock lightdark-background"></div>
                 <div class="colorblock dark-background"></div>
-
-
-
-
-
                 <p class="dark-color" id="lightest"></p>
                 <p class="dark-color" id="light"></p>
                 <p class="dark-color" id="maincolor"></p>
