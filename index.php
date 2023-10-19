@@ -138,7 +138,7 @@ if (isset($_SESSION['isHTTPS'])) {
         <p class="httpexplanation" style="background-color: black;color:white;">Don't like these colors? Try reloading the page.</p>
     <?php endif; ?>
     <header class="centered-fp lightest-background">
-        <a href="#firstinfo" class="dark-color fptitle">Yorick Devleeschouwer</a>
+        <h1><a href="#firstinfo" class="dark-color fptitle">Yorick Devleeschouwer</a></h1>
     </header>
     <section class="firstinfo dark-background" id="firstinfo">
         <div class="firstinfo-container">
