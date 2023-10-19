@@ -47,6 +47,13 @@ if (isset($_SESSION['isHTTPS'])) {
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-WHDRZWXG');
     </script>
+    <!-- mailchimp -->
+    <script id="mcjs">
+        ! function(c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+        }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/73ce4ec6685f7d62b4ee57336/ee7c52e7988ddb10b5dfa36b2.js");
+    </script>
+    <!-- end mailchimp -->
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,9 +76,6 @@ if (isset($_SESSION['isHTTPS'])) {
     <meta property="twitter:title" content="Yorick Devleeschouwer | Portfolio" />
     <meta property="twitter:description" content="Here you can explore some things i've been working on..." />
     <meta property="twitter:image" content="https://portfolionew.blob.core.windows.net/photos/main/graphs.jpg?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D" />
-
-
-
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
