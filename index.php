@@ -3,7 +3,7 @@ require_once __DIR__ . '/bootstrap.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
 
-    // Set the HTTPS status in the session
+    // Set the HTTPS status in the sessio
     $_SESSION['isHTTPS'] = $isHTTPS;
 
     // Return the HTTPS status as the response
