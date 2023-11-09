@@ -127,7 +127,7 @@
 <body class="lightest-background">
     <div class="centeredflex">
         <div class="colorblocks">
-            <?php if ($isHTTPS) : ?>
+            <!-- <?php if ($isHTTPS) : ?>
                 <div class="httpstext">
                     <p class="toptext" style="background-color: black;color:white;">Can't see any colors here?</p>
                     <p class="bottext" style="background-color: black;color:white;">Try reloading the page as http to get your random color palette!</p>
@@ -148,7 +148,7 @@
     </div>
     <?php if (!$isHTTPS) : ?>
         <p class="httpexplanation" style="background-color: black;color:white;">Don't like these colors? Try reloading the page.</p>
-    <?php endif; ?>
+    <?php endif; ?> -->
     <header class="centered-fp lightest-background">
         <h1><a href="#firstinfo" class="dark-color fptitle">Yorick Devleeschouwer</a></h1>
     </header>
