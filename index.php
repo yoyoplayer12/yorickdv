@@ -1,29 +1,29 @@
 <?php
-require_once __DIR__ . '/bootstrap.php';
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
+// require_once __DIR__ . '/bootstrap.php';
+// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+//     $isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
 
-    // Set the HTTPS status in the sessio
-    $_SESSION['isHTTPS'] = $isHTTPS;
+//     // Set the HTTPS status in the sessio
+//     $_SESSION['isHTTPS'] = $isHTTPS;
 
-    // Return the HTTPS status as the response
-    echo $isHTTPS ? "true" : "false";
-    exit();
-}
-// Check if the HTTPS status has been set in the session
-if (isset($_SESSION['isHTTPS'])) {
-    $isHTTPS = $_SESSION['isHTTPS'];
-    if ($isHTTPS) {
-        // Show content for HTTPS
-        $httpsStatus = "This is an HTTPS page.";
-    } else {
-        // Show content for non-HTTPS
-        $httpsStatus = "This is not an HTTPS page.";
-    }
-} else {
-    // HTTPS status not available, handle accordingly
-    $httpsStatus = "Unable to determine HTTPS status.";
-}
+//     // Return the HTTPS status as the response
+//     echo $isHTTPS ? "true" : "false";
+//     exit();
+// }
+// // Check if the HTTPS status has been set in the session
+// if (isset($_SESSION['isHTTPS'])) {
+//     $isHTTPS = $_SESSION['isHTTPS'];
+//     if ($isHTTPS) {
+//         // Show content for HTTPS
+//         $httpsStatus = "This is an HTTPS page.";
+//     } else {
+//         // Show content for non-HTTPS
+//         $httpsStatus = "This is not an HTTPS page.";
+//     }
+// } else {
+//     // HTTPS status not available, handle accordingly
+//     $httpsStatus = "Unable to determine HTTPS status.";
+// }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -190,59 +190,59 @@ if (isset($_SESSION['isHTTPS'])) {
     </section>
 </body>
 <script>
-    var url = "http://colormind.io/api/";
-    var data = {
-        model: "default"
-    }
+    // var url = "http://colormind.io/api/";
+    // var data = {
+    //     model: "default"
+    // }
 
-    var http = new XMLHttpRequest();
+    // var http = new XMLHttpRequest();
     
-    http.onreadystatechange = function() {
-        if (http.readyState == 4 && http.status == 200) {
-            var palette = JSON.parse(http.responseText).result;
-            var dark = palette[0];
-            var lightdark = palette[1];
-            var maincolor = palette[2];
-            var light = palette[3];
-            var lightest = palette[4];
+    // http.onreadystatechange = function() {
+    //     if (http.readyState == 4 && http.status == 200) {
+    //         var palette = JSON.parse(http.responseText).result;
+    //         var dark = palette[0];
+    //         var lightdark = palette[1];
+    //         var maincolor = palette[2];
+    //         var light = palette[3];
+    //         var lightest = palette[4];
 
-            //backgroundcolors
-            assignBackgroundColorToElement(".dark-background", dark); // Assign color to element with id "element-1"
-            assignBackgroundColorToElement(".lightdark-background", lightdark); // Assign color to element with id "element-1"
-            assignBackgroundColorToElement(".maincolor-background", maincolor); // Assign color to element with id "element-1"
-            assignBackgroundColorToElement(".light-background", light); // Assign color to element with id "element-1"
-            assignBackgroundColorToElement(".lightest-background", lightest); // Assign color to element with id "element-1"
-            //colors
-            assignColorToElement(".dark-color", dark); // Assign color to element with id "element-1"
-            assignColorToElement(".lightdark-color", lightdark); // Assign color to element with id "element-1"
-            assignColorToElement(".maincolor-color", maincolor); // Assign color to element with id "element-1"
-            assignColorToElement(".light-color", light); // Assign color to element with id "element-1"
-            assignColorToElement(".lightest-color", lightest); // Assign color to element with id "element-1"
-            //set color names
-            document.getElementById("dark").innerHTML = "rgb(" + dark + ")";
-            document.getElementById("lightdark").innerHTML = "rgb(" + lightdark + ")";
-            document.getElementById("maincolor").innerHTML = "rgb(" + maincolor + ")";
-            document.getElementById("light").innerHTML = "rgb(" + light + ")";
-            document.getElementById("lightest").innerHTML = "rgb(" + lightest + ")";
-        }
-    }
+    //         //backgroundcolors
+    //         assignBackgroundColorToElement(".dark-background", dark); // Assign color to element with id "element-1"
+    //         assignBackgroundColorToElement(".lightdark-background", lightdark); // Assign color to element with id "element-1"
+    //         assignBackgroundColorToElement(".maincolor-background", maincolor); // Assign color to element with id "element-1"
+    //         assignBackgroundColorToElement(".light-background", light); // Assign color to element with id "element-1"
+    //         assignBackgroundColorToElement(".lightest-background", lightest); // Assign color to element with id "element-1"
+    //         //colors
+    //         assignColorToElement(".dark-color", dark); // Assign color to element with id "element-1"
+    //         assignColorToElement(".lightdark-color", lightdark); // Assign color to element with id "element-1"
+    //         assignColorToElement(".maincolor-color", maincolor); // Assign color to element with id "element-1"
+    //         assignColorToElement(".light-color", light); // Assign color to element with id "element-1"
+    //         assignColorToElement(".lightest-color", lightest); // Assign color to element with id "element-1"
+    //         //set color names
+    //         document.getElementById("dark").innerHTML = "rgb(" + dark + ")";
+    //         document.getElementById("lightdark").innerHTML = "rgb(" + lightdark + ")";
+    //         document.getElementById("maincolor").innerHTML = "rgb(" + maincolor + ")";
+    //         document.getElementById("light").innerHTML = "rgb(" + light + ")";
+    //         document.getElementById("lightest").innerHTML = "rgb(" + lightest + ")";
+    //     }
+    // }
 
-    http.open("POST", url, true);
-    http.send(JSON.stringify(data));
+    // http.open("POST", url, true);
+    // http.send(JSON.stringify(data));
 
-    function assignBackgroundColorToElement(elementclass, color) {
-        var element = document.querySelectorAll(elementclass);
-        for (var i = 0; i < element.length; i++) {
-            element[i].style.backgroundColor = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
-        }
-    }
+    // function assignBackgroundColorToElement(elementclass, color) {
+    //     var element = document.querySelectorAll(elementclass);
+    //     for (var i = 0; i < element.length; i++) {
+    //         element[i].style.backgroundColor = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
+    //     }
+    // }
 
-    function assignColorToElement(elementclass, color) {
-        var element = document.querySelectorAll(elementclass);
-        for (var i = 0; i < element.length; i++) {
-            element[i].style.color = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
-        }
-    }
+    // function assignColorToElement(elementclass, color) {
+    //     var element = document.querySelectorAll(elementclass);
+    //     for (var i = 0; i < element.length; i++) {
+    //         element[i].style.color = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
+    //     }
+    // }
 </script>
 
 </html>
