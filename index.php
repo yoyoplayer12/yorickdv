@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__ . '/bootstrap.php';
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
 
