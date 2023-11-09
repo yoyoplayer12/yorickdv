@@ -125,9 +125,9 @@
 </head>
 
 <body class="lightest-background">
-    <div class="centeredflex">
+    <!-- <div class="centeredflex">
         <div class="colorblocks">
-            <!-- <?php if ($isHTTPS) : ?>
+            <?php if ($isHTTPS) : ?>
                 <div class="httpstext">
                     <p class="toptext" style="background-color: black;color:white;">Can't see any colors here?</p>
                     <p class="bottext" style="background-color: black;color:white;">Try reloading the page as http to get your random color palette!</p>
