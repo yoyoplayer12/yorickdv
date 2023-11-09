@@ -1,0 +1,4 @@
+services:
+  - name: portfolio
+    type: web
+    env: docker
