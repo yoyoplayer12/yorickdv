@@ -117,7 +117,7 @@
         <a href="projects/2IMD/zengarden/index.html" class="lightest-color">CSS Zengarden (theme: dance) - 2nd year XD</a>
     </section>
     <section class="contactsection dark-background lightest-color" id="Contact">
-        <h2 class="lightest-color normaltitle"><a href="https://us9.list-manage.com/contact-form?u=73ce4ec6685f7d62b4ee57336&form_id=793ed7f20041658033ccecd40efcd7a7">Contact me</a></h2>
+        <h2 class="lightest-color normaltitle"><a class="lightest-color" href="https://us9.list-manage.com/contact-form?u=73ce4ec6685f7d62b4ee57336&form_id=793ed7f20041658033ccecd40efcd7a7">Contact me</a></h2>
         <a href="mailto:yorick.devleeschouwer@gmail.com" class="lightest-color">yorick.devleeschouwer@gmail.com</a>
         <a href="tel:+32 475 71 61 86" class="lightest-color">+32 475 71 61 86</a>
         <div id="socials">
