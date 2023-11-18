@@ -172,6 +172,12 @@
         var maincolor = palette[2];
         var light = palette[3];
         var lightest = palette[4];
+        console.log(palette);
+        console.log(dark);
+        console.log(lightdark);
+        console.log(maincolor);
+        console.log(light);
+        console.log(lightest);
         //backgroundcolors
         assignBackgroundColorToElement(".dark-background", dark); // Assign color to element with id "element-1"
         assignBackgroundColorToElement(".lightdark-background", lightdark); // Assign color to element with id "element-1"
