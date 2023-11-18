@@ -1,33 +1,5 @@
-<?php
-// require_once __DIR__ . '/bootstrap.php';
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     $isHTTPS = isset($_POST['isHTTPS']) && $_POST['isHTTPS'] === 'true';
-
-//     // Set the HTTPS status in the sessio
-//     $_SESSION['isHTTPS'] = $isHTTPS;
-
-//     // Return the HTTPS status as the response
-//     echo $isHTTPS ? "true" : "false";
-//     exit();
-// }
-// // Check if the HTTPS status has been set in the session
-// if (isset($_SESSION['isHTTPS'])) {
-//     $isHTTPS = $_SESSION['isHTTPS'];
-//     if ($isHTTPS) {
-//         // Show content for HTTPS
-//         $httpsStatus = "This is an HTTPS page.";
-//     } else {
-//         // Show content for non-HTTPS
-//         $httpsStatus = "This is not an HTTPS page.";
-//     }
-// } else {
-//     // HTTPS status not available, handle accordingly
-//     $httpsStatus = "Unable to determine HTTPS status.";
-// }
-?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KRQD287WDE"></script>
@@ -123,7 +95,6 @@
 
     <title>Yorick Devleeschouwer | Developer DJ Designer</title>
 </head>
-
 <body class="lightest-background">
     <div class="centeredflex">
         <div class="colorblocks">
@@ -201,6 +172,12 @@
         var maincolor = palette[2];
         var light = palette[3];
         var lightest = palette[4];
+        console.log(palette);
+        console.log(dark);
+        console.log(lightdark);
+        console.log(maincolor);
+        console.log(light);
+        console.log(lightest);
         //backgroundcolors
         assignBackgroundColorToElement(".dark-background", dark); // Assign color to element with id "element-1"
         assignBackgroundColorToElement(".lightdark-background", lightdark); // Assign color to element with id "element-1"
@@ -237,5 +214,4 @@
         }
     }
 </script>
-
 </html>
