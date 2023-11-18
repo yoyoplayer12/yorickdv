@@ -159,10 +159,9 @@
     fetch(url)
     .then(response => response.json())
     .then(data => {
-        let thedata = data.data[0].colors
-        console.log(thedata.length);
+        numberofcolors = data.data[0].colors.length;
         // Object.keys(data.shareInfo[i]).length
-        var palette = data.data[0].colors[0];
+        var palette = data.data[0].colors[getRandomInt(numberofcolors)];
         var dark = palette['color1'];
         var lightdark = palette['color2'];
         var maincolor = palette['color3'];
