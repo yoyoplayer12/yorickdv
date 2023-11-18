@@ -160,7 +160,7 @@
     .then(response => response.json())
     .then(data => {
         let thedata = data.data[0].colors
-        console.log(thedata.length);
+        console.log(data.data[0].colors.length);
         // Object.keys(data.shareInfo[i]).length
         var palette = data.data[0].colors[0];
         var dark = palette['color1'];
