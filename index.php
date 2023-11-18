@@ -160,7 +160,7 @@
     .then(response => response.json())
     .then(data => {
         console.log(data.data[0].colors[0]);
-        var palette = data.message;
+        var palette = data.data[0].colors[0];
         var dark = palette['color1'];
         var lightdark = palette['color2'];
         var maincolor = palette['color3'];
