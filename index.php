@@ -51,30 +51,6 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        // Send an AJAX request to the current page URL
-        $.ajax({
-            type: 'POST',
-            url: window.location.href,
-            data: {
-                isHTTPS: window.location.protocol === "https:"
-            },
-            success: function(response) {
-                console.log(response);
-                // Handle the response here (e.g., show content based on HTTPS status)
-                if (response === "true") {
-                    // Show content for HTTPS
-                    $('#content').text("This is an HTTPS page.");
-                } else {
-                    // Show content for non-HTTPS
-                    $('#content').text("This is not an HTTPS page.");
-                }
-            },
-            error: function(xhr, status, error) {
-                console.log(error);
-            }
-        });
-    </script>
     <!-- Hotjar Tracking Code for https://www.yorickdv.be -->
     <script>
         (function(h, o, t, j, a, r) {
@@ -170,7 +146,6 @@
         var maincolor = palette['color3'];
         var light = palette['color4'];
         var lightest = palette['color5'];
-        console.log(palette);
         console.log(dark);
         console.log(lightdark);
         console.log(maincolor);
