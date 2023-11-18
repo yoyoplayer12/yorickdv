@@ -152,6 +152,9 @@
     </section>
 </body>
 <script>
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
     var url = "https://color-yyvm.onrender.com/api/v1/colors/";
     var data = {
         model: "default"
