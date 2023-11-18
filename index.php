@@ -157,7 +157,7 @@
         model: "default"
     }
     fetch(url, {
-        method: 'POST',
+        method: 'GET',
         headers: {
             'Content-Type': 'application/json'
         },
