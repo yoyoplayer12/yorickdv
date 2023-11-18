@@ -125,14 +125,8 @@
 </head>
 
 <body class="lightest-background">
-    <!-- <div class="centeredflex">
+    <div class="centeredflex">
         <div class="colorblocks">
-            <?php if ($isHTTPS) : ?>
-                <div class="httpstext">
-                    <p class="toptext" style="background-color: black;color:white;">Can't see any colors here?</p>
-                    <p class="bottext" style="background-color: black;color:white;">Try reloading the page as http to get your random color palette!</p>
-                </div>
-            <?php else : ?>
                 <div class="colorblock lightest-background"></div>
                 <div class="colorblock light-background"></div>
                 <div class="colorblock maincolor-background"></div>
@@ -143,12 +137,9 @@
                 <p class="dark-color" id="maincolor"></p>
                 <p class="dark-color" id="lightdark"></p>
                 <p class="dark-color" id="dark"></p>
-            <?php endif; ?>
         </div>
     </div>
-    <?php if (!$isHTTPS) : ?>
-        <p class="httpexplanation" style="background-color: black;color:white;">Don't like these colors? Try reloading the page.</p>
-    <?php endif; ?> -->
+    <p class="httpexplanation" style="background-color: black;color:white;">Don't like these colors? Try reloading the page.</p>
     <header class="centered-fp lightest-background">
         <h1><a href="#firstinfo" class="dark-color fptitle">Yorick Devleeschouwer</a></h1>
     </header>
@@ -190,59 +181,61 @@
     </section>
 </body>
 <script>
-    // var url = "http://colormind.io/api/";
-    // var data = {
-    //     model: "default"
-    // }
+    var url = "https://color-yyvm.onrender.com/api/v1/colors/";
+    var data = {
+        model: "default"
+    }
+    fetch(url, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data),
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.result);
+        var palette = data.result;
+        var dark = palette[0];
+        var lightdark = palette[1];
+        var maincolor = palette[2];
+        var light = palette[3];
+        var lightest = palette[4];
+        //backgroundcolors
+        assignBackgroundColorToElement(".dark-background", dark); // Assign color to element with id "element-1"
+        assignBackgroundColorToElement(".lightdark-background", lightdark); // Assign color to element with id "element-1"
+        assignBackgroundColorToElement(".maincolor-background", maincolor); // Assign color to element with id "element-1"
+        assignBackgroundColorToElement(".light-background", light); // Assign color to element with id "element-1"
+        assignBackgroundColorToElement(".lightest-background", lightest); // Assign color to element with id "element-1"
+        //colors
+        assignColorToElement(".dark-color", dark); // Assign color to element with id "element-1"
+        assignColorToElement(".lightdark-color", lightdark); // Assign color to element with id "element-1"
+        assignColorToElement(".maincolor-color", maincolor); // Assign color to element with id "element-1"
+        assignColorToElement(".light-color", light); // Assign color to element with id "element-1"
+        assignColorToElement(".lightest-color", lightest); // Assign color to element with id "element-1"
+        //set color names
+        document.getElementById("dark").innerHTML = "rgb(" + dark + ")";
+        document.getElementById("lightdark").innerHTML = "rgb(" + lightdark + ")";
+        document.getElementById("maincolor").innerHTML = "rgb(" + maincolor + ")";
+        document.getElementById("light").innerHTML = "rgb(" + light + ")";
+        document.getElementById("lightest").innerHTML = "rgb(" + lightest + ")";
+    })
+        .catch((error) => {
+        console.error('Error:', error);
+    });
+    function assignBackgroundColorToElement(elementclass, color) {
+        var element = document.querySelectorAll(elementclass);
+        for (var i = 0; i < element.length; i++) {
+            element[i].style.backgroundColor = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
+        }
+    }
 
-    // var http = new XMLHttpRequest();
-    
-    // http.onreadystatechange = function() {
-    //     if (http.readyState == 4 && http.status == 200) {
-    //         var palette = JSON.parse(http.responseText).result;
-    //         var dark = palette[0];
-    //         var lightdark = palette[1];
-    //         var maincolor = palette[2];
-    //         var light = palette[3];
-    //         var lightest = palette[4];
-
-    //         //backgroundcolors
-    //         assignBackgroundColorToElement(".dark-background", dark); // Assign color to element with id "element-1"
-    //         assignBackgroundColorToElement(".lightdark-background", lightdark); // Assign color to element with id "element-1"
-    //         assignBackgroundColorToElement(".maincolor-background", maincolor); // Assign color to element with id "element-1"
-    //         assignBackgroundColorToElement(".light-background", light); // Assign color to element with id "element-1"
-    //         assignBackgroundColorToElement(".lightest-background", lightest); // Assign color to element with id "element-1"
-    //         //colors
-    //         assignColorToElement(".dark-color", dark); // Assign color to element with id "element-1"
-    //         assignColorToElement(".lightdark-color", lightdark); // Assign color to element with id "element-1"
-    //         assignColorToElement(".maincolor-color", maincolor); // Assign color to element with id "element-1"
-    //         assignColorToElement(".light-color", light); // Assign color to element with id "element-1"
-    //         assignColorToElement(".lightest-color", lightest); // Assign color to element with id "element-1"
-    //         //set color names
-    //         document.getElementById("dark").innerHTML = "rgb(" + dark + ")";
-    //         document.getElementById("lightdark").innerHTML = "rgb(" + lightdark + ")";
-    //         document.getElementById("maincolor").innerHTML = "rgb(" + maincolor + ")";
-    //         document.getElementById("light").innerHTML = "rgb(" + light + ")";
-    //         document.getElementById("lightest").innerHTML = "rgb(" + lightest + ")";
-    //     }
-    // }
-
-    // http.open("POST", url, true);
-    // http.send(JSON.stringify(data));
-
-    // function assignBackgroundColorToElement(elementclass, color) {
-    //     var element = document.querySelectorAll(elementclass);
-    //     for (var i = 0; i < element.length; i++) {
-    //         element[i].style.backgroundColor = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
-    //     }
-    // }
-
-    // function assignColorToElement(elementclass, color) {
-    //     var element = document.querySelectorAll(elementclass);
-    //     for (var i = 0; i < element.length; i++) {
-    //         element[i].style.color = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
-    //     }
-    // }
+    function assignColorToElement(elementclass, color) {
+        var element = document.querySelectorAll(elementclass);
+        for (var i = 0; i < element.length; i++) {
+            element[i].style.color = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
+        }
+    }
 </script>
 
 </html>
