@@ -167,11 +167,11 @@
     .then(data => {
         console.log(data.message);
         var palette = data.message;
-        var dark = palette[0];
-        var lightdark = palette[1];
-        var maincolor = palette[2];
-        var light = palette[3];
-        var lightest = palette[4];
+        var dark = palette['color1'];
+        var lightdark = palette['color2'];
+        var maincolor = palette['color3'];
+        var light = palette['color4'];
+        var lightest = palette['color5'];
         console.log(palette);
         console.log(dark);
         console.log(lightdark);
