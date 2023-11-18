@@ -161,7 +161,8 @@
     .then(data => {
         let thedata = data.data[0]
         console.log(thedata);
-        console.log(thedata.length)
+
+        console.log(JsonGetArrayLength(thedata));
         var palette = data.data[0].colors[0];
         var dark = palette['color1'];
         var lightdark = palette['color2'];
