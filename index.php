@@ -194,8 +194,8 @@
     })
     .then(response => response.json())
     .then(data => {
-        console.log(data.result);
-        var palette = data.result;
+        console.log(data.message);
+        var palette = data.message;
         var dark = palette[0];
         var lightdark = palette[1];
         var maincolor = palette[2];
