@@ -197,14 +197,14 @@
     function assignBackgroundColorToElement(elementclass, color) {
         var element = document.querySelectorAll(elementclass);
         for (var i = 0; i < element.length; i++) {
-            element[i].style.backgroundColor = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
+            element[i].style.backgroundColor = '#' + color;
         }
     }
 
     function assignColorToElement(elementclass, color) {
         var element = document.querySelectorAll(elementclass);
         for (var i = 0; i < element.length; i++) {
-            element[i].style.color = 'rgb(' + color[0] + ',' + color[1] + ',' + color[2] + ')';
+            element[i].style.color = '#' + color;
         }
     }
 </script>
