@@ -159,10 +159,9 @@
     fetch(url)
     .then(response => response.json())
     .then(data => {
-        console.log(data.data[0].colors[0]);
-        console.log(data.data[0].colors[1]);
-        let datalength = (data.data[0]).length;
-        console.log(datalength);
+        let thedata = data.data[0]
+        console.log(thedata);
+        console.log(thedata.length)
         var palette = data.data[0].colors[0];
         var dark = palette['color1'];
         var lightdark = palette['color2'];
