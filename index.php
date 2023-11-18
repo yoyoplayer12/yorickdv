@@ -161,7 +161,8 @@
     .then(data => {
         console.log(data.data[0].colors[0]);
         console.log(data.data[0].colors[1]);
-        console.log(data.data[0].length)
+        let datalength = (data.data[0]).length;
+        console.log(datalength);
         var palette = data.data[0].colors[0];
         var dark = palette['color1'];
         var lightdark = palette['color2'];
