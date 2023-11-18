@@ -159,7 +159,7 @@
     fetch(url)
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+        console.log(data.data);
         var palette = data.message;
         var dark = palette['color1'];
         var lightdark = palette['color2'];
