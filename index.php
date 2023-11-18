@@ -185,11 +185,11 @@
         assignColorToElement(".light-color", light); // Assign color to element with id "element-1"
         assignColorToElement(".lightest-color", lightest); // Assign color to element with id "element-1"
         //set color names
-        document.getElementById("dark").innerHTML = "rgb(" + dark + ")";
-        document.getElementById("lightdark").innerHTML = "rgb(" + lightdark + ")";
-        document.getElementById("maincolor").innerHTML = "rgb(" + maincolor + ")";
-        document.getElementById("light").innerHTML = "rgb(" + light + ")";
-        document.getElementById("lightest").innerHTML = "rgb(" + lightest + ")";
+        document.getElementById("dark").innerHTML = "#" + dark;
+        document.getElementById("lightdark").innerHTML = "#" + lightdark;
+        document.getElementById("maincolor").innerHTML = "#"  + maincolor;
+        document.getElementById("light").innerHTML = "#" + light;
+        document.getElementById("lightest").innerHTML = "#" + lightest;
     })
         .catch((error) => {
         console.error('Error:', error);
