@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Not found</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <section class="firstinfo dark-background" id="firstinfo">
+            <h1 class="lightest-color">Piss off</h1>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="lightest-color" id="fourback">ur surprise</a>
+    </section>
+</body>
+</html>
+<script>
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+    var url = "https://color-yyvm.onrender.com/api/v1/colors/";
+    var data = {
+        model: "default"
+    }
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            numberofcolors = data.data[0].colors.length;
+            // Object.keys(data.shareInfo[i]).length
+            var palette = data.data[0].colors[getRandomInt(numberofcolors)];
+            var dark = palette['color1'];
+            var lightdark = palette['color2'];
+            var maincolor = palette['color3'];
+            var light = palette['color4'];
+            var lightest = palette['color5'];
+            console.log(dark);
+            console.log(lightdark);
+            console.log(maincolor);
+            console.log(light);
+            console.log(lightest);
+            //backgroundcolors
+            assignBackgroundColorToElement(".dark-background", dark); // Assign color to element with id "element-1"
+            assignBackgroundColorToElement(".lightdark-background", lightdark); // Assign color to element with id "element-1"
+            assignBackgroundColorToElement(".maincolor-background", maincolor); // Assign color to element with id "element-1"
+            assignBackgroundColorToElement(".light-background", light); // Assign color to element with id "element-1"
+            assignBackgroundColorToElement(".lightest-background", lightest); // Assign color to element with id "element-1"
+            //colors
+            assignColorToElement(".dark-color", dark); // Assign color to element with id "element-1"
+            assignColorToElement(".lightdark-color", lightdark); // Assign color to element with id "element-1"
+            assignColorToElement(".maincolor-color", maincolor); // Assign color to element with id "element-1"
+            assignColorToElement(".light-color", light); // Assign color to element with id "element-1"
+            assignColorToElement(".lightest-color", lightest); // Assign color to element with id "element-1"
+            //set color names
+            document.getElementById("dark").innerHTML = "#" + dark;
+            document.getElementById("lightdark").innerHTML = "#" + lightdark;
+            document.getElementById("maincolor").innerHTML = "#" + maincolor;
+            document.getElementById("light").innerHTML = "#" + light;
+            document.getElementById("lightest").innerHTML = "#" + lightest;
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    function assignBackgroundColorToElement(elementclass, color) {
+        var element = document.querySelectorAll(elementclass);
+        for (var i = 0; i < element.length; i++) {
+            element[i].style.backgroundColor = '#' + color;
+        }
+    }
+
+    function assignColorToElement(elementclass, color) {
+        var element = document.querySelectorAll(elementclass);
+        for (var i = 0; i < element.length; i++) {
+            element[i].style.color = '#' + color;
+        }
+    }
+</script>
