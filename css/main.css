@@ -187,7 +187,12 @@ a.fptitle:hover{
     padding-right: 20px;
     text-align: center;
 }
-
+#fourback{
+    text-decoration: underline;
+}
+#fourback:hover{
+    text-decoration: wavy underline;
+}
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     a.fptitle:active, a.fptitle:hover, a.fptitle:visited, a.fptitle:link, .normaltitle{
