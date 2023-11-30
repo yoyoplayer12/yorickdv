@@ -65,4 +65,10 @@
             <changefreq>yearly</changefreq>
             <priority>0.6</priority>
     </url>
+    <url>
+        <Loc>https://www.yorickdv.be/projects/2IMD/zengarden/404.html</Loc>
+            <lastmod>2023-11-30</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>0.1</priority>
+    </url>
 </urlset>
