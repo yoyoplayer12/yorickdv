@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <Loc>https://www.yorickdv.be</Loc>
+        <loc>https://www.yorickdv.be</loc>
             <lastmod>2023-11-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>1.0</priority>
     </url>
     <url>
-        <Loc>https://www.yorickdv.be/#firstinfo</Loc>
+        <loc>https://www.yorickdv.be/#firstinfo</loc>
             <lastmod>2023-11-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.9</priority>
     </url>
     <url>
-        <Loc>https://www.yorickdv.be/#develop</Loc>
+        <loc>https://www.yorickdv.be/#develop</loc>
             <lastmod>2023-11-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
     </url>
     <url>
-        <Loc>https://www.yorickdv.be/#dj</Loc>
+        <loc>https://www.yorickdv.be/#dj</loc>
             <lastmod>2023-11-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
     </url>
     <url>
-        <Loc>https://www.yorickdv.be/#design</Loc>
+        <loc>https://www.yorickdv.be/#design</loc>
             <lastmod>2023-11-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
     </url>
     <url>
-        <Loc>https://www.yorickdv.be/projects/1IMD/BeachPuppies/game.html</Loc>
+        <loc>https://www.yorickdv.be/projects/1IMD/BeachPuppies/game.html</loc>
             <lastmod>2023-11-30</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.5</priority>
     </url>
     <url>
-        <Loc>https://www.yorickdv.be/projects/1IMD/clubdefender/portrait.html</Loc>
+        <loc>https://www.yorickdv.be/projects/1IMD/clubdefender/portrait.html</loc>
             <lastmod>2023-11-30</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.7</priority>
     </url>
     <url>
-        <Loc>https://www.yorickdv.be/projects/1IMD/doodle/index.html</Loc>
+        <loc>https://www.yorickdv.be/projects/1IMD/doodle/index.html</loc>
             <lastmod>2023-11-30</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.6</priority>
     </url>
     <url>
-        <Loc>https://www.yorickdv.be/projects/2IMD/deathproof/death-proof.html</Loc>
+        <loc>https://www.yorickdv.be/projects/2IMD/deathproof/death-proof.html</loc>
             <lastmod>2023-11-30</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.7</priority>
     </url>
     <url>
-        <Loc>https://www.yorickdv.be/projects/2IMD/night/index.html</Loc>
+        <loc>https://www.yorickdv.be/projects/2IMD/night/index.html</loc>
             <lastmod>2023-11-30</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.6</priority>
     </url>
     <url>
-        <Loc>https://www.yorickdv.be/projects/2IMD/zengarden/index.html</Loc>
+        <loc>https://www.yorickdv.be/projects/2IMD/zengarden/index.html</loc>
             <lastmod>2023-11-30</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.6</priority>
     </url>
     <url>
-        <Loc>https://www.yorickdv.be/projects/2IMD/zengarden/404.html</Loc>
+        <loc>https://www.yorickdv.be/projects/2IMD/zengarden/404.html</loc>
             <lastmod>2023-11-30</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.1</priority>
