@@ -227,6 +227,7 @@ table th{
 .table-container{
     width: 100vw;
     overflow-x: auto;
+    margin-left: 50px;
 }
 
 /* tablet */
