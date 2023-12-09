@@ -3,3 +3,4 @@ Disallow: /css/
 Disallow: /fonts/
 Allow: /projects/
 Allow: index.html
+Allow: tmlpricehistory.html
