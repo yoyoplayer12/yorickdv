@@ -193,6 +193,42 @@ a.fptitle:hover{
 #fourback:hover{
     text-decoration: wavy underline;
 }
+.tmlfont{
+    font-family: montserrat-thin;
+    font-weight: 100;
+}
+.centertml{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+table{
+    border-collapse: collapse;
+    border: 3px solid black;
+    margin-bottom: 50px;
+    text-align: left;
+    width: 1170px;
+}
+table td{
+    border: 3px solid black;
+    padding: 10px;
+    font-family: montserrat-thin;
+    font-weight: 100;
+}
+table td::after {
+    content: ',00€';
+}
+table th{
+    border: 3px solid black;
+    padding: 10px;
+}
+.table-container{
+    width: 100vw;
+    overflow-x: auto;
+}
+
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     a.fptitle:active, a.fptitle:hover, a.fptitle:visited, a.fptitle:link, .normaltitle{
