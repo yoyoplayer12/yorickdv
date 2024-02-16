@@ -73,8 +73,20 @@
             <priority>0.1</priority>
     </url>
     <url>
-        <loc>https://www.yorickdv.be/tmlpricehistory.html</loc>
-            <lastmod>2023-11-30</lastmod>
+        <loc>https://www.yorickdv.be/tomorrowland/tomorrowland-price-history.html</loc>
+            <lastmod>2024-02-16</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>1</priority>
+    </url>
+    <url>
+        <loc>https://www.yorickdv.be/tomorrowland/years/2024.html</loc>
+            <lastmod>2024-02-16</lastmod>
+            <changefreq>yearly</changefreq>
+            <priority>1</priority>
+    </url>
+        <url>
+        <loc>https://www.yorickdv.be/tomorrowland/years/tomorrowland-table-2024.html</loc>
+            <lastmod>2024-02-16</lastmod>
             <changefreq>yearly</changefreq>
             <priority>1</priority>
     </url>

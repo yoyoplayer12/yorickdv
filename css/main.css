@@ -228,7 +228,42 @@ table th{
     overflow-x: auto;
     margin-left: 50px;
 }
-
+.tmlimgblock{
+    width: 250px;
+    height: auto;
+    transition: transform 0.1s ease;
+}
+.tmlimgblock:hover{
+    transform: scale(1.05);
+}
+.dropdowns-tml{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 10px;
+}
+.priceButton{
+    font-family: montserrat-thin;
+    font-weight: 100;
+    font-size: 18px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.2s ease;
+}
+.priceButton:hover{
+    cursor: pointer;
+    background-color: rgb(233, 233, 233);
+}
+.dropdown-tml{
+    border: none;
+    border-bottom: 1px solid black;
+}
+.dropdown-tml:hover{
+    cursor: pointer;
+}
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     a.fptitle:active, a.fptitle:hover, a.fptitle:visited, a.fptitle:link, .normaltitle{
