@@ -3,4 +3,6 @@ Disallow: /css/
 Disallow: /fonts/
 Allow: /projects/
 Allow: index.html
-Allow: tmlpricehistory.html
+Allow: tomorrowland/tomorrowland-price-history.html
+Allow: tomorrowland/years/2024.html
+Allow: tomorrowland/years/tomorrowland-table-2024.html
