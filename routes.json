@@ -18,6 +18,31 @@
         "route": "/**",
         "serve": "404.html",
         "statusCode": 404
+      },
+      {
+        "route": "/217.html",
+        "serve": "217.html",
+        "statusCode": 217
+      },
+      {
+        "route": "/218.html",
+        "serve": "218.html",
+        "statusCode": 218
+      },
+      {
+        "route": "/219.html",
+        "serve": "219.html",
+        "statusCode": 219
+      },
+      {
+        "route": "/220.html",
+        "serve": "220.html",
+        "statusCode": 220
+      },
+      {
+        "route": "/221.html",
+        "serve": "221.html",
+        "statusCode": 221
       }
     ]
   }
