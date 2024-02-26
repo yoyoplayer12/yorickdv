@@ -264,6 +264,13 @@ table th{
 .dropdown-tml:hover{
     cursor: pointer;
 }
+.blogpic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-inline: auto;
+}
 /* tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     a.fptitle:active, a.fptitle:hover, a.fptitle:visited, a.fptitle:link, .normaltitle{
