@@ -38,7 +38,7 @@ h3{
 	margin-top: 0;
 	height: 50px;
 	line-height: 50px;
-	background-image: url('https://portfolionew.blob.core.windows.net/photos/zengarden/headerpic.avif?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D'); /* Replace 'mask-image.png' with the path to your mask image */
+	background-image: url('https://portfolioyo.blob.core.windows.net/photos/zengarden/headerpic.avif?sp=r&st=2024-04-22T10:21:46Z&se=2035-01-01T19:21:46Z&sv=2022-11-02&sr=c&sig=nOr7eOncQif%2Bi1WUftDnEFThAeSBquEMpYiAik6WF8c%3D'); /* Replace 'mask-image.png' with the path to your mask image */
 	background-clip: text;
 	-webkit-background-clip: text; /* For Safari */
 	color: transparent;
@@ -57,7 +57,7 @@ header {
 	background-color: var(--secondary-darkblue);
 	display: grid;
 	grid-template-rows: auto auto;
-	background-image: url('https://portfolionew.blob.core.windows.net/photos/zengarden/headerpic.avif?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D'); /* Replace 'mask-image.png' with the path to your mask image */
+	background-image: url('https://portfolioyo.blob.core.windows.net/photos/zengarden/headerpic.avif?sp=r&st=2024-04-22T10:21:46Z&se=2035-01-01T19:21:46Z&sv=2022-11-02&sr=c&sig=nOr7eOncQif%2Bi1WUftDnEFThAeSBquEMpYiAik6WF8c%3D'); /* Replace 'mask-image.png' with the path to your mask image */
 	background-clip: text;
 	-webkit-background-clip: text; /* For Safari */
 	color: transparent;
@@ -111,7 +111,7 @@ header h2::first-word{
 /* 2 */
 .preamble{
 	height: 100vh;
-	background-image: url('https://portfolionew.blob.core.windows.net/photos/zengarden/background.jpg?sp=r&st=2023-09-30T19:27:28Z&se=2027-09-13T03:27:28Z&sv=2022-11-02&sr=c&sig=VW5wrRC5ATdgTCgeJBXjVpeoVW0p4r4RIHfg9bal2yU%3D');
+	background-image: url('https://portfolioyo.blob.core.windows.net/photos/zengarden/background.jpg?sp=r&st=2024-04-22T10:21:46Z&se=2035-01-01T19:21:46Z&sv=2022-11-02&sr=c&sig=nOr7eOncQif%2Bi1WUftDnEFThAeSBquEMpYiAik6WF8c%3D');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
